@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "pairs": [
+    {
+      "id": "sample-train",
+      "inputs": [
+        "train/input.png"
+      ],
+      "target": "train/target.png",
+      "split": "train",
+      "group_id": "source-a",
+      "identities": [
+        "person-a"
+      ]
+    },
+    {
+      "id": "sample-validation",
+      "inputs": [
+        "validation/input.png"
+      ],
+      "target": "validation/target.png",
+      "split": "validation",
+      "group_id": "source-b",
+      "identities": [
+        "person-b"
+      ]
+    },
+    {
+      "id": "sample-test",
+      "inputs": [
+        "test/input.png"
+      ],
+      "target": "test/target.png",
+      "split": "test",
+      "group_id": "source-c",
+      "identities": [
+        "person-c"
+      ]
+    }
+  ]
+}

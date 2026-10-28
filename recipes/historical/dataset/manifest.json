@@ -1,0 +1,1774 @@
+[
+  {
+    "id": "001_kitten-bedspread",
+    "input": "pairs/001_kitten-bedspread/input.jpeg",
+    "output": "pairs/001_kitten-bedspread/output.png",
+    "original_input_filename": "_ (36).jpeg",
+    "original_output_filename": "Wide-Eyed Tabby Kitten on a Bedspread.png",
+    "input_sha256": "593f40c08a06b78facfb15417ce1e48e6eae7d6dcb76d9e2de92614d92d4f4a1",
+    "output_sha256": "9645f2ab44a91965014ca29255997f86b8e244824a4c4772a671559e61a9999d",
+    "source_chat_id": "6a81d4b8-2140-8336-913b-22c49465b6d6",
+    "pairing_evidence": "Input matches an accessible chat attachment byte-for-byte. Output matched by descriptive filename, download time and visual comparison; generated attachment identity is unavailable.",
+    "pair_status": "visually_matched",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "notes": "The input has grey top and bottom borders absent from the output. Framing and kitten proportions change; the background is densely hatched.",
+    "review_status": "approved",
+    "confidence": "high",
+    "source_chat_history_available": true,
+    "input_filenames": [
+      "_ (36).jpeg"
+    ],
+    "output_filename": "Wide-Eyed Tabby Kitten on a Bedspread.png",
+    "inputs": [
+      "pairs/001_kitten-bedspread/input.jpeg"
+    ],
+    "kind": "single_input",
+    "file_sha256": {
+      "pairs/001_kitten-bedspread/input.jpeg": "593f40c08a06b78facfb15417ce1e48e6eae7d6dcb76d9e2de92614d92d4f4a1",
+      "pairs/001_kitten-bedspread/output.png": "9645f2ab44a91965014ca29255997f86b8e244824a4c4772a671559e61a9999d"
+    },
+    "group": "source-178",
+    "review_notes": ""
+  },
+  {
+    "id": "002_cat-la-streetwear",
+    "input": "pairs/002_cat-la-streetwear/input.jpeg",
+    "output": "pairs/002_cat-la-streetwear/output.png",
+    "original_input_filename": "_ (39).jpeg",
+    "original_output_filename": "Graphite tabby in LA streetwear.png",
+    "input_sha256": "dcce1bf1045de1e17c0f4d07537fdfff790eaafcc2a7367d4c1b6c3f5ce147c1",
+    "output_sha256": "1419733e29ec42fe621bbfce5330f091631763ab127ccabb79fefeddd087d3c1",
+    "source_chat_id": "6a81d4b8-2140-8336-913b-22c49465b6d6",
+    "pairing_evidence": "Input matches an accessible chat attachment byte-for-byte. Output matched by descriptive filename, download time and visual comparison; generated attachment identity is unavailable.",
+    "pair_status": "visually_matched",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "notes": "The original background is removed. The cap and clothing retain substantial dark shading.",
+    "review_status": "approved",
+    "confidence": "high",
+    "source_chat_history_available": true,
+    "input_filenames": [
+      "_ (39).jpeg"
+    ],
+    "output_filename": "Graphite tabby in LA streetwear.png",
+    "inputs": [
+      "pairs/002_cat-la-streetwear/input.jpeg"
+    ],
+    "kind": "single_input",
+    "file_sha256": {
+      "pairs/002_cat-la-streetwear/input.jpeg": "dcce1bf1045de1e17c0f4d07537fdfff790eaafcc2a7367d4c1b6c3f5ce147c1",
+      "pairs/002_cat-la-streetwear/output.png": "1419733e29ec42fe621bbfce5330f091631763ab127ccabb79fefeddd087d3c1"
+    },
+    "group": "source-183",
+    "review_notes": ""
+  },
+  {
+    "id": "003_footballer-number-7",
+    "input": "pairs/003_footballer-number-7/input.jpeg",
+    "output": "pairs/003_footballer-number-7/output.png",
+    "original_input_filename": "_ (40).jpeg",
+    "original_output_filename": "Graphite footballer in action, number 7.png",
+    "input_sha256": "06d9daf103e3c9c34dafec5691abf82f661c429afc8015453becb472e10ece33",
+    "output_sha256": "ea730689c44af92667a1e6d03f8a907dc9da89f74ddbbcfb0b07d32879ccc7cd",
+    "source_chat_id": "6a81d4b8-2140-8336-913b-22c49465b6d6",
+    "pairing_evidence": "Input matches an accessible chat attachment byte-for-byte. Output matched by descriptive filename, download time and visual comparison; generated attachment identity is unavailable.",
+    "pair_status": "visually_matched",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "notes": "The background is simplified. Facial details and framing change; the kit has dense shading.",
+    "review_status": "approved",
+    "confidence": "high",
+    "source_chat_history_available": true,
+    "input_filenames": [
+      "_ (40).jpeg"
+    ],
+    "output_filename": "Graphite footballer in action, number 7.png",
+    "inputs": [
+      "pairs/003_footballer-number-7/input.jpeg"
+    ],
+    "kind": "single_input",
+    "file_sha256": {
+      "pairs/003_footballer-number-7/input.jpeg": "06d9daf103e3c9c34dafec5691abf82f661c429afc8015453becb472e10ece33",
+      "pairs/003_footballer-number-7/output.png": "ea730689c44af92667a1e6d03f8a907dc9da89f74ddbbcfb0b07d32879ccc7cd"
+    },
+    "group": "source-185",
+    "review_notes": ""
+  },
+  {
+    "id": "004_pair",
+    "inputs": [
+      "pairs/004_pair/input.jpeg"
+    ],
+    "input": "pairs/004_pair/input.jpeg",
+    "output": "pairs/004_pair/output.png",
+    "input_filenames": [
+      "_ (30).jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 16, 2026, 04_22_58 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-0",
+    "input_download_times_london": [
+      "2026-08-16T16:18:05.669449+01:00"
+    ],
+    "output_download_time_london": "2026-08-16T16:22:59.010941+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/004_pair/input.jpeg": "f166d69dadb5933b509a989f26ec5a7e311d3def062494058ea7cdbe75d1ee45",
+      "pairs/004_pair/output.png": "56fecb81b98ab80d3d2d6327d200234a73e838f1583e464e2ca50faa7d32a6b9"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "005_pair",
+    "inputs": [
+      "pairs/005_pair/input.jpeg"
+    ],
+    "input": "pairs/005_pair/input.jpeg",
+    "output": "pairs/005_pair/output.png",
+    "input_filenames": [
+      "football legends.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 16, 2026, 04_22_26 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-1",
+    "input_download_times_london": [
+      "2026-08-16T16:19:29.464829+01:00"
+    ],
+    "output_download_time_london": "2026-08-16T16:22:27.306556+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/005_pair/input.jpeg": "8822e51f0e14ad096e7a5f87b4e43721a71c735c4d5dfa5d09e7924c288eabd8",
+      "pairs/005_pair/output.png": "9b80813d7c5ad25239108a92bf6c19a7d2dd92a6eafd964b2e6733692e809fda"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "006_pair",
+    "inputs": [
+      "pairs/006_pair/input.jpeg"
+    ],
+    "input": "pairs/006_pair/input.jpeg",
+    "output": "pairs/006_pair/output.png",
+    "input_filenames": [
+      "raphinha.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 17, 2026, 08_44_46 AM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-4",
+    "input_download_times_london": [
+      "2026-08-17T08:42:31.401170+01:00"
+    ],
+    "output_download_time_london": "2026-08-17T08:44:47.218701+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/006_pair/input.jpeg": "13fce94dbdab6a12740574fcd7015ab40b268921b5039fd0072bbbddd1134466",
+      "pairs/006_pair/output.png": "27587526d4c55d56dfe8c434e9cbc28991aca7ad2a47ef23206b147c0fdbb5b3"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "007_pair",
+    "inputs": [
+      "pairs/007_pair/input.jpeg"
+    ],
+    "input": "pairs/007_pair/input.jpeg",
+    "output": "pairs/007_pair/output.png",
+    "input_filenames": [
+      "Ronaldo & messi.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 17, 2026, 08_50_29 AM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-6",
+    "input_download_times_london": [
+      "2026-08-17T08:49:19.264251+01:00"
+    ],
+    "output_download_time_london": "2026-08-17T08:50:30.241410+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/007_pair/input.jpeg": "618c5f2dde0d3dd421f56078ed0acc850175c574b8a12ca120353664b38303ab",
+      "pairs/007_pair/output.png": "1aab719cd384dc2be376ef34218bac394de465a939a539301e9b01d844c911a7"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "008_pair",
+    "inputs": [
+      "pairs/008_pair/input.jpeg"
+    ],
+    "input": "pairs/008_pair/input.jpeg",
+    "output": "pairs/008_pair/output.png",
+    "input_filenames": [
+      "Raphinha (1).jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 18, 2026, 08_13_01 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-10",
+    "input_download_times_london": [
+      "2026-08-18T20:09:17.569897+01:00"
+    ],
+    "output_download_time_london": "2026-08-18T20:13:01.501125+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/008_pair/input.jpeg": "93e7615e142d86fed75f42280b789518b9d1a538e67163e3a1c4b4b3a9fb705b",
+      "pairs/008_pair/output.png": "fbf49ea639ea4079584901c22cfdf3d884fc5b9dd54868ee687708c505463a0d"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "009_pair",
+    "inputs": [
+      "pairs/009_pair/input.jpeg"
+    ],
+    "input": "pairs/009_pair/input.jpeg",
+    "output": "pairs/009_pair/output.png",
+    "input_filenames": [
+      "Lamine yamal.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 29, 2026, 02_01_35 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-20",
+    "input_download_times_london": [
+      "2026-08-29T13:58:35.184639+01:00"
+    ],
+    "output_download_time_london": "2026-08-29T14:01:35.954148+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/009_pair/input.jpeg": "9c41b44c2f5fce9c7f96a29dd84cda4d6e15d0a0dbad754b361a9ad68f797af2",
+      "pairs/009_pair/output.png": "18c5cfd362191e37d381bd71964e7d60be9d55fcc15d11f6d7058b874eb74449"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "010_pair",
+    "inputs": [
+      "pairs/010_pair/input.jpeg"
+    ],
+    "input": "pairs/010_pair/input.jpeg",
+    "output": "pairs/010_pair/output.png",
+    "input_filenames": [
+      "Cristiano Ronaldo (2).jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 30, 2026, 03_36_04 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-30",
+    "input_download_times_london": [
+      "2026-08-30T15:32:42.056026+01:00"
+    ],
+    "output_download_time_london": "2026-08-30T15:36:04.707787+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/010_pair/input.jpeg": "dec62100d5950679cba46218d8a7024c8bcc3346c3731c83c029245606d347aa",
+      "pairs/010_pair/output.png": "78a160604592f27ab873d2ce52a3283460ff0d19af3080d11688bab253dd29c4"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "011_pair",
+    "inputs": [
+      "pairs/011_pair/input.jpeg"
+    ],
+    "input": "pairs/011_pair/input.jpeg",
+    "output": "pairs/011_pair/output.png",
+    "input_filenames": [
+      "#lamineyamal #spain #worldcup2026_.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 31, 2026, 10_28_04 AM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-26",
+    "input_download_times_london": [
+      "2026-08-30T15:01:30.061333+01:00"
+    ],
+    "output_download_time_london": "2026-08-31T10:28:04.554514+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/011_pair/input.jpeg": "b31b5464c49e8dfd22490481e5d76d2eac3dafed9a79b72016a22ba0ea31b56f",
+      "pairs/011_pair/output.png": "2a7007dca262867f9a21ab120e54b80cabe354b6d590a9a37cbdbdc12ec2e5f3"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "012_pair",
+    "inputs": [
+      "pairs/012_pair/input.jpeg"
+    ],
+    "input": "pairs/012_pair/input.jpeg",
+    "output": "pairs/012_pair/output.png",
+    "input_filenames": [
+      "Cristiano Ronaldo 🇵🇹.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 31, 2026, 10_30_20 AM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-32",
+    "input_download_times_london": [
+      "2026-08-31T10:25:49.276273+01:00"
+    ],
+    "output_download_time_london": "2026-08-31T10:30:20.550764+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/012_pair/input.jpeg": "aa4051045a51038b264b786d7235cbd8916fe9f584270139007d06a68e61bee3",
+      "pairs/012_pair/output.png": "888ebedb1bf61dd947acc66275c677cf563bf55327a5c0ddd939323d84324917"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "013_pair",
+    "inputs": [
+      "pairs/013_pair/input.jpeg"
+    ],
+    "input": "pairs/013_pair/input.jpeg",
+    "output": "pairs/013_pair/output.png",
+    "input_filenames": [
+      "CR7 Aesthetic Wallpaper _ Siuuu 🐐.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 3, 2026, 08_15_17 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-36",
+    "input_download_times_london": [
+      "2026-09-03T20:10:52.315338+01:00"
+    ],
+    "output_download_time_london": "2026-09-03T20:15:18.204682+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/013_pair/input.jpeg": "297705ccae9f7cf8daf7aee8b079ab67e3df250c7079725fee625a22a6a9cad1",
+      "pairs/013_pair/output.png": "9d618787a5e0f0ba895c20f82d55db8fbfb339917c829f2ed51f440b6fc18d75"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "014_pair",
+    "inputs": [
+      "pairs/014_pair/input.jpeg"
+    ],
+    "input": "pairs/014_pair/input.jpeg",
+    "output": "pairs/014_pair/output.png",
+    "input_filenames": [
+      "Hey Jude_ Is Bellingham England’s Most Misunderstood Player_.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 3, 2026, 08_16_45 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-37",
+    "input_download_times_london": [
+      "2026-09-03T20:14:37.072253+01:00"
+    ],
+    "output_download_time_london": "2026-09-03T20:16:46.012192+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/014_pair/input.jpeg": "81aba3024536c4fb0165091c60da83aa32315591d28318d0e75b315cb12b6c04",
+      "pairs/014_pair/output.png": "8d37556a04316585540ccc4675e5d075e7edef524d049f3c077b5d3d2a3cb2e7"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "015_pair",
+    "inputs": [
+      "pairs/015_pair/input.jpeg"
+    ],
+    "input": "pairs/015_pair/input.jpeg",
+    "output": "pairs/015_pair/output.png",
+    "input_filenames": [
+      "lamine yamal🌟.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 6, 2026, 07_20_56 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-41",
+    "input_download_times_london": [
+      "2026-09-06T19:18:24.806128+01:00"
+    ],
+    "output_download_time_london": "2026-09-06T19:20:56.818429+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/015_pair/input.jpeg": "28ffc75e217819c37d445431bff5aa18b363bb284ddd611c321d1869dbce77ef",
+      "pairs/015_pair/output.png": "fcdf08ad707324c3b6f09c3ecbb2589e6110752fc81523c19d75b66ea8deffcb"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "016_pair",
+    "inputs": [
+      "pairs/016_pair/input.jpeg"
+    ],
+    "input": "pairs/016_pair/input.jpeg",
+    "output": "pairs/016_pair/output.png",
+    "input_filenames": [
+      "Cristiano Ronaldo (3).jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 6, 2026, 07_22_42 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-42",
+    "input_download_times_london": [
+      "2026-09-06T19:19:54.005564+01:00"
+    ],
+    "output_download_time_london": "2026-09-06T19:22:43.109038+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/016_pair/input.jpeg": "1e063d0de0cc16072cb97dd9cc85b0e86d78212d1f41c14d6d7f9d9956caa852",
+      "pairs/016_pair/output.png": "a5c8cbbcee65cf36c0f1209a25084f57955ba331bb3db95763c22f099123c75f"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "017_pair",
+    "inputs": [
+      "pairs/017_pair/input.jpeg"
+    ],
+    "input": "pairs/017_pair/input.jpeg",
+    "output": "pairs/017_pair/output.png",
+    "input_filenames": [
+      "Lamine Yamal & Nico Williams.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 9, 2026, 09_10_02 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-52",
+    "input_download_times_london": [
+      "2026-09-09T21:06:16.942989+01:00"
+    ],
+    "output_download_time_london": "2026-09-09T21:10:03.384583+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/017_pair/input.jpeg": "bc9a72fc8693a87e52f6b28b8043cf2053d8c96c7807a0938f3c40a8ffcc9b79",
+      "pairs/017_pair/output.png": "0f516c6bf986def5c26627aa6860802b9e0a95511af9be766142659f00947b98"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "018_pair",
+    "inputs": [
+      "pairs/018_pair/input.jpeg"
+    ],
+    "input": "pairs/018_pair/input.jpeg",
+    "output": "pairs/018_pair/output.png",
+    "input_filenames": [
+      "Con un emotivo Cristiano Ronaldo, Portugal pasa a los Cuartos de Final gracias a un heroico Diogo Costa en penales.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 9, 2026, 09_12_13 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-53",
+    "input_download_times_london": [
+      "2026-09-09T21:09:31.156090+01:00"
+    ],
+    "output_download_time_london": "2026-09-09T21:12:13.813532+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/018_pair/input.jpeg": "6740c6c7d465c4d63ede0c5392a52850959797d92801fd46d922f138cb1a4c62",
+      "pairs/018_pair/output.png": "9cfad2b751fbb6ad6e39139b3ad92bd6d0267a89c0d9bb06b840a2172e6c74a9"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "019_pair",
+    "inputs": [
+      "pairs/019_pair/input.jpeg"
+    ],
+    "input": "pairs/019_pair/input.jpeg",
+    "output": "pairs/019_pair/output.png",
+    "input_filenames": [
+      "CR7 & GARNACHO _.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 10, 2026, 08_25_00 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-56",
+    "input_download_times_london": [
+      "2026-09-10T20:20:45.126236+01:00"
+    ],
+    "output_download_time_london": "2026-09-10T20:25:01.173753+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/019_pair/input.jpeg": "bc2ac311e53bd000d4aaab022f800eed6ecd77e978304d077b3ddb80b907686c",
+      "pairs/019_pair/output.png": "0aeb162acc6c53b56c3b03ef9a37ffcc631efaedf016735ef4f51abd49784ef4"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "020_pair",
+    "inputs": [
+      "pairs/020_pair/input.jpeg"
+    ],
+    "input": "pairs/020_pair/input.jpeg",
+    "output": "pairs/020_pair/output.png",
+    "input_filenames": [
+      "Diogo Costa e Cristiano Ronaldo.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 10, 2026, 08_28_15 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-57",
+    "input_download_times_london": [
+      "2026-09-10T20:22:39.491874+01:00"
+    ],
+    "output_download_time_london": "2026-09-10T20:28:15.736826+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/020_pair/input.jpeg": "d89098a13c023cdd766c8ada565927582b3ba167edc022f7da468b48806df6ed",
+      "pairs/020_pair/output.png": "cefb03d89ec234c4bdd1ddd37c4c4408e41a4134a88b9cb1a30b2633633f5599"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "021_pair",
+    "inputs": [
+      "pairs/021_pair/input.jpeg"
+    ],
+    "input": "pairs/021_pair/input.jpeg",
+    "output": "pairs/021_pair/output.png",
+    "input_filenames": [
+      "Vini Jr.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 11, 2026, 08_19_10 AM (1).png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-61",
+    "input_download_times_london": [
+      "2026-09-11T08:16:18.993834+01:00"
+    ],
+    "output_download_time_london": "2026-09-11T08:19:10.583866+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/021_pair/input.jpeg": "6e399c3802a94567371a7fef6605c90f6b34562425b870c52df6a67fee627489",
+      "pairs/021_pair/output.png": "cf4908e3205a8f301f6ff901f355000539cbd4e545aa8ccb57056336fe584a7b"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "022_pair",
+    "inputs": [
+      "pairs/022_pair/input.jpeg"
+    ],
+    "input": "pairs/022_pair/input.jpeg",
+    "output": "pairs/022_pair/output.png",
+    "input_filenames": [
+      "Cristiano Ronaldo (4).jpeg"
+    ],
+    "output_filename": "febb1b70-593b-4c5b-a302-f240c7d46c89.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-62",
+    "input_download_times_london": [
+      "2026-09-11T08:16:45.054295+01:00"
+    ],
+    "output_download_time_london": "2026-09-11T08:20:25.509534+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/022_pair/input.jpeg": "11e63cc44b6e5bd6677a17f2714b9694d4e0345313eeefd31ffe09f350fd60af",
+      "pairs/022_pair/output.png": "48b9c9be02081913614b4465569f4e57756df7fdb9e32fe6a29cf1c3c82cc2a8"
+    },
+    "review_notes": "the bg should remain white"
+  },
+  {
+    "id": "023_pair",
+    "inputs": [
+      "pairs/023_pair/input.jpeg"
+    ],
+    "input": "pairs/023_pair/input.jpeg",
+    "output": "pairs/023_pair/output.png",
+    "input_filenames": [
+      "🥶Ronaldo🥶.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 13, 2026, 06_57_46 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-68",
+    "input_download_times_london": [
+      "2026-09-13T18:55:50.138324+01:00"
+    ],
+    "output_download_time_london": "2026-09-13T18:57:47.583082+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/023_pair/input.jpeg": "0a99b5e69edeb4e70700f354b6d687c1996483401ea119c8d8fc3b63f755ab2e",
+      "pairs/023_pair/output.png": "236c550cb260a8c6f1be7d45efd03e8b076435cf60f32cd7167579dc7614ab6c"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "024_pair",
+    "inputs": [
+      "pairs/024_pair/input.jpeg"
+    ],
+    "input": "pairs/024_pair/input.jpeg",
+    "output": "pairs/024_pair/output.png",
+    "input_filenames": [
+      "CR7 (2).jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 13, 2026, 07_04_28 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-72",
+    "input_download_times_london": [
+      "2026-09-13T19:03:08.060603+01:00"
+    ],
+    "output_download_time_london": "2026-09-13T19:04:28.589134+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/024_pair/input.jpeg": "d75777cea78bebf0fd9949e13040a85f2c3759a99dedefa5d8f39767aee7df51",
+      "pairs/024_pair/output.png": "ab814e9c27831292829c5c95ec85fa27c818848a6a120591513f0bda03b96682"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "025_pair",
+    "inputs": [
+      "pairs/025_pair/input.jpeg"
+    ],
+    "input": "pairs/025_pair/input.jpeg",
+    "output": "pairs/025_pair/output.png",
+    "input_filenames": [
+      "Cristiano Ronaldo show muscle.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 13, 2026, 07_23_54 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-70",
+    "input_download_times_london": [
+      "2026-09-13T18:58:18.846772+01:00"
+    ],
+    "output_download_time_london": "2026-09-13T19:23:54.024743+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/025_pair/input.jpeg": "38bc017674b28200759a44911b91038b72e3e3b4433d8e192be51d0b1c3bc3c2",
+      "pairs/025_pair/output.png": "e3a6d270c18994b99923e0a6dd88a314c01a9fcc18168d314ef4991870c2d332"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "026_pair",
+    "inputs": [
+      "pairs/026_pair/input.jpeg"
+    ],
+    "input": "pairs/026_pair/input.jpeg",
+    "output": "pairs/026_pair/output.png",
+    "input_filenames": [
+      "Christiano Ronaldo 💫.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 13, 2026, 07_29_14 PM.png",
+    "confidence": "high",
+    "review_status": "rejected",
+    "training_status": "excluded",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-75",
+    "input_download_times_london": [
+      "2026-09-13T19:26:57.275607+01:00"
+    ],
+    "output_download_time_london": "2026-09-13T19:29:14.915295+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/026_pair/input.jpeg": "9859da90aa65352f32d47ae8a11ecdc51f8445f74e9a80afa1f3ad62e7c46e11",
+      "pairs/026_pair/output.png": "daf81fa1a6d6ad1582877f0f2cabf7dd6e91fd18f69f5ce5b1c5b6f9e26b717b"
+    },
+    "review_notes": "remove the pair as result has legs, which were not asked to add"
+  },
+  {
+    "id": "027_pair",
+    "inputs": [
+      "pairs/027_pair/input.jpeg"
+    ],
+    "input": "pairs/027_pair/input.jpeg",
+    "output": "pairs/027_pair/output.png",
+    "input_filenames": [
+      "_ (31).jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 14, 2026, 08_42_34 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-77",
+    "input_download_times_london": [
+      "2026-09-14T20:39:20.667912+01:00"
+    ],
+    "output_download_time_london": "2026-09-14T20:42:34.834415+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/027_pair/input.jpeg": "6ebe01277c147ffedad22cf247aa8102b0a5ee1d80fe302ca5ec89173a839b8f",
+      "pairs/027_pair/output.png": "1eb76ca401fcad56a02fdcddfa3678a0fcee493c0df8fb0193b62defef1d1d56"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "028_pair",
+    "inputs": [
+      "pairs/028_pair/input.jpeg"
+    ],
+    "input": "pairs/028_pair/input.jpeg",
+    "output": "pairs/028_pair/output.png",
+    "input_filenames": [
+      "NEYMAR JR _ COPA DO MUNDO.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 14, 2026, 08_43_37 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-78",
+    "input_download_times_london": [
+      "2026-09-14T20:41:49.403833+01:00"
+    ],
+    "output_download_time_london": "2026-09-14T20:43:37.760452+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/028_pair/input.jpeg": "de11a3f3ac544849c222250e1e4658241d7e3df278f99a2ad975c5d4acc5d04b",
+      "pairs/028_pair/output.png": "7bb30a16515fdd74f7b11d86cf2791fbbddb439f0a9ac9e5e1bf5a524b8b6143"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "029_pair",
+    "inputs": [
+      "pairs/029_pair/input.jpeg"
+    ],
+    "input": "pairs/029_pair/input.jpeg",
+    "output": "pairs/029_pair/output.png",
+    "input_filenames": [
+      "Bugatti Chiron.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 16, 2026, 08_27_19 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-82",
+    "input_download_times_london": [
+      "2026-09-16T20:20:40.307996+01:00"
+    ],
+    "output_download_time_london": "2026-09-16T20:27:19.924877+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training. A second visually equivalent Bugatti reference is available; the exact uploaded copy is unknown.",
+    "alternative_input_filenames": [
+      "Bugatti Chiron (1).jpeg"
+    ],
+    "file_sha256": {
+      "pairs/029_pair/input.jpeg": "56e3fe4bd3d6ad8d6a9b364fbdac9a7192d760043ff7d493b36de119a647519e",
+      "pairs/029_pair/output.png": "bce25b676dad7e65c0a9a3ab0b9b8af92a54ce1b9bdf571ebfe2c8ff775569e1"
+    },
+    "review_notes": "the car was explicitly asked to be fully drawn; in recult cr7 is missing on the car unfortuntaley."
+  },
+  {
+    "id": "030_pair",
+    "inputs": [
+      "pairs/030_pair/input.jpeg"
+    ],
+    "input": "pairs/030_pair/input.jpeg",
+    "output": "pairs/030_pair/output.png",
+    "input_filenames": [
+      "_ (32).jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 16, 2026, 08_39_59 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-88",
+    "input_download_times_london": [
+      "2026-09-16T20:36:02.535073+01:00"
+    ],
+    "output_download_time_london": "2026-09-16T20:39:59.642010+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/030_pair/input.jpeg": "5dba6d8473d614c56b296e6c10339fb66f31bf9347e1cd24044c9cf5ba0a4198",
+      "pairs/030_pair/output.png": "9c8d45abfa4cc1707af95ae27c18e945221a5c0abd28f200c10119fc5ab3bf28"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "031_pair",
+    "inputs": [
+      "pairs/031_pair/input.jpeg"
+    ],
+    "input": "pairs/031_pair/input.jpeg",
+    "output": "pairs/031_pair/output.png",
+    "input_filenames": [
+      "Vinicius Junior Brazylia.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 18, 2026, 07_50_57 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-91",
+    "input_download_times_london": [
+      "2026-09-18T19:48:25.355559+01:00"
+    ],
+    "output_download_time_london": "2026-09-18T19:50:58.207548+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/031_pair/input.jpeg": "9d18fddd3540616e555242f8d9f7fff78c74f7be599ed5ed7db581cac4b4082f",
+      "pairs/031_pair/output.png": "94af5d985a6ef75d6686b03075df6ec11efc4e57ddd8a99a39588ded693d3932"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "032_pair",
+    "inputs": [
+      "pairs/032_pair/input.jpeg"
+    ],
+    "input": "pairs/032_pair/input.jpeg",
+    "output": "pairs/032_pair/output.png",
+    "input_filenames": [
+      "Lamine Yamal 4K HD Wallpaper 2026 ⚽ Spain World Cup Champion_ Barcelona_ Best Young Footballer Photo.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 19, 2026, 09_12_24 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-94",
+    "input_download_times_london": [
+      "2026-09-19T21:09:00.855118+01:00"
+    ],
+    "output_download_time_london": "2026-09-19T21:12:24.477604+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/032_pair/input.jpeg": "1785b79805b80b42a022bb39b9adbb134e684a7b99ca5718b6eed6204b877395",
+      "pairs/032_pair/output.png": "95ed098365ef037335c6a69ccf2e785fa2f23dc3b8241fd510b648501d251368"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "033_pair",
+    "inputs": [
+      "pairs/033_pair/input.jpeg"
+    ],
+    "input": "pairs/033_pair/input.jpeg",
+    "output": "pairs/033_pair/output.png",
+    "input_filenames": [
+      "𝗖𝗿𝗶𝘀𝘁𝗶𝗮𝗻𝗼 𝗥𝗼𝗻𝗮𝗹𝗱𝗼 ☆.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 19, 2026, 09_13_41 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-95",
+    "input_download_times_london": [
+      "2026-09-19T21:10:59.332789+01:00"
+    ],
+    "output_download_time_london": "2026-09-19T21:13:41.554236+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/033_pair/input.jpeg": "428b545aac0e644f52460e531f9830892c611b90ed9c81edd36500cd035637de",
+      "pairs/033_pair/output.png": "e4495ecca622906f0eca2e7cacf030b503bc5bb97470bf5824757eb0abc2cac0"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "034_pair",
+    "inputs": [
+      "pairs/034_pair/input.jpeg"
+    ],
+    "input": "pairs/034_pair/input.jpeg",
+    "output": "pairs/034_pair/output.png",
+    "input_filenames": [
+      "lamine yamal (1).jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 25, 2026, 07_51_03 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-115",
+    "input_download_times_london": [
+      "2026-09-25T19:48:02.119826+01:00"
+    ],
+    "output_download_time_london": "2026-09-25T19:51:03.621500+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/034_pair/input.jpeg": "d58c9e0eb24ce9372f20aab0c254c66735c5cd698d8e64768dcca59e89b5607c",
+      "pairs/034_pair/output.png": "28d23b51234fe16795a7a8c8427774efcbbc68fbc9ab939846c9a8edf3e7a146"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "035_pair",
+    "inputs": [
+      "pairs/035_pair/input.jpeg"
+    ],
+    "input": "pairs/035_pair/input.jpeg",
+    "output": "pairs/035_pair/output.png",
+    "input_filenames": [
+      "Ronaldo Al Nassr Wallpaper.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 25, 2026, 07_52_48 PM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-116",
+    "input_download_times_london": [
+      "2026-09-25T19:49:19.927058+01:00"
+    ],
+    "output_download_time_london": "2026-09-25T19:52:48.568983+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/035_pair/input.jpeg": "72fff6468f2c3bcf6889e4f12a5dcdc0983bfb9fb2a7b1f8107556e0da948362",
+      "pairs/035_pair/output.png": "6542cc4091010f706bb4af7b2b89de93f8680065d147f9d959ece94b6613278f"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "036_pair",
+    "inputs": [
+      "pairs/036_pair/input.jpeg"
+    ],
+    "input": "pairs/036_pair/input.jpeg",
+    "output": "pairs/036_pair/output.png",
+    "input_filenames": [
+      "Ronaldo Junior.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 27, 2026, 09_41_36 AM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-123",
+    "input_download_times_london": [
+      "2026-09-27T09:37:36.681885+01:00"
+    ],
+    "output_download_time_london": "2026-09-27T09:42:00.794810+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/036_pair/input.jpeg": "aebfe3f45b69d1cf2f8cb19a7fbe500e687f4ada4d77cbbb3d7e22f7f87a6967",
+      "pairs/036_pair/output.png": "6981c6c134b48033d2a563ab0ee2bd20974edd42c7e308f9bce97357ea749cb0"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "037_pair",
+    "inputs": [
+      "pairs/037_pair/input.jpeg"
+    ],
+    "input": "pairs/037_pair/input.jpeg",
+    "output": "pairs/037_pair/output.png",
+    "input_filenames": [
+      "Eduardo Camavinga Super Copa Wallpaper.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 27, 2026, 09_43_38 AM.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-125",
+    "input_download_times_london": [
+      "2026-09-27T09:42:51.886103+01:00"
+    ],
+    "output_download_time_london": "2026-09-27T09:43:38.862276+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/037_pair/input.jpeg": "45a8e20563e3dadb9d71c604b399c43f60bfc67fb74ab13c40a04617b69973f8",
+      "pairs/037_pair/output.png": "79a7b69611157f91b6c2fad598c2348dae4ac1a2cadb7432820eb41f41d562a2"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "038_pair",
+    "inputs": [
+      "pairs/038_pair/input.jpeg"
+    ],
+    "input": "pairs/038_pair/input.jpeg",
+    "output": "pairs/038_pair/output.png",
+    "input_filenames": [
+      "Born to score goal🖕.jpeg"
+    ],
+    "output_filename": "Graphite Sketch of a Celebrating Footballer.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-130",
+    "input_download_times_london": [
+      "2026-10-02T20:40:03.226801+01:00"
+    ],
+    "output_download_time_london": "2026-10-02T20:41:49.678514+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/038_pair/input.jpeg": "1012a51de30d6ddaa712e21a509ca06ad590033095a7fe6a5b05f39f498fc67f",
+      "pairs/038_pair/output.png": "e5a04044038e9515f113c3baf6bcb8a67d1c2833d375a351c2db48bf62fa8ba1"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "039_pair",
+    "inputs": [
+      "pairs/039_pair/input.jpeg"
+    ],
+    "input": "pairs/039_pair/input.jpeg",
+    "output": "pairs/039_pair/output.png",
+    "input_filenames": [
+      "Alejandro Garnacho loves to celebrate like his idol Cristiano Ronaldo 🤝.jpeg"
+    ],
+    "output_filename": "Ronaldo and Garnacho in graphite.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-133",
+    "input_download_times_london": [
+      "2026-10-02T20:51:23.040070+01:00"
+    ],
+    "output_download_time_london": "2026-10-02T20:56:02.700055+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/039_pair/input.jpeg": "0adb30069e7ef8dc038a8a108e95b5f714bb3dc6bd0da017ab3d7e94cb60b0d2",
+      "pairs/039_pair/output.png": "1c9640a639b4a766448005ab3056466a6610c5aa0148c87a22064deb39ee9ab3"
+    },
+    "review_notes": "result shold have just a bit less intense"
+  },
+  {
+    "id": "040_pair",
+    "inputs": [
+      "pairs/040_pair/input.jpeg"
+    ],
+    "input": "pairs/040_pair/input.jpeg",
+    "output": "pairs/040_pair/output.png",
+    "input_filenames": [
+      "CR7 WALLPAPERS.jpeg"
+    ],
+    "output_filename": "ChatGPT Image 3 Oct 2026, 17_42_01.png",
+    "confidence": "high",
+    "review_status": "rejected",
+    "training_status": "excluded",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-135",
+    "input_download_times_london": [
+      "2026-10-03T17:35:13.264624+01:00"
+    ],
+    "output_download_time_london": "2026-10-03T17:42:08.683205+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/040_pair/input.jpeg": "2d63ce00b98624294e893bd4226ca7b3975f0bc68fdacf9befd55843eb579649",
+      "pairs/040_pair/output.png": "abe24dbce4bb6f4684e397434321d77c85b2d2dea554ad1915fbc2b6ee73282e"
+    },
+    "review_notes": "too photo realistic"
+  },
+  {
+    "id": "041_pair",
+    "inputs": [
+      "pairs/041_pair/input.jpeg"
+    ],
+    "input": "pairs/041_pair/input.jpeg",
+    "output": "pairs/041_pair/output.png",
+    "input_filenames": [
+      "Watch Milo and Chip - S1_E20 We Found the Longest Scariest Tunnel in Minecraft (2025) Online for Free _ The Roku Channel _ Roku.jpeg"
+    ],
+    "output_filename": "ChatGPT Image 3 Oct 2026, 17_48_01.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-136",
+    "input_download_times_london": [
+      "2026-10-03T17:36:48.833310+01:00"
+    ],
+    "output_download_time_london": "2026-10-03T17:48:05.509460+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/041_pair/input.jpeg": "ec59ff7746d6510cdd216dc381d3da943513e3767477e0927947990f4498d2c0",
+      "pairs/041_pair/output.png": "cb40a1aaa1f4be0803dfbebc7550646010efbe1ec4139576a720c183fa34652a"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "042_pair",
+    "inputs": [
+      "pairs/042_pair/input.jpeg"
+    ],
+    "input": "pairs/042_pair/input.jpeg",
+    "output": "pairs/042_pair/output.png",
+    "input_filenames": [
+      "cama🤍.jpeg"
+    ],
+    "output_filename": "Camavinga in Graphite on the Pitch.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-139",
+    "input_download_times_london": [
+      "2026-10-04T09:20:11.098430+01:00"
+    ],
+    "output_download_time_london": "2026-10-04T09:22:18.156245+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/042_pair/input.jpeg": "4d1b1f2a4d590ee961ab37cb26fb9e8a8051fc91c10cf5beb33f92afa6a8bcf3",
+      "pairs/042_pair/output.png": "b86acf0633a3348633551679fb7e85dd59e9660fd0b50511f7978b546046c67d"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "043_pair",
+    "inputs": [
+      "pairs/043_pair/input.jpeg"
+    ],
+    "input": "pairs/043_pair/input.jpeg",
+    "output": "pairs/043_pair/output.png",
+    "input_filenames": [
+      "Portugal nationa league champion.jpeg"
+    ],
+    "output_filename": "Portugal's Trophy Celebration in Graphite.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-141",
+    "input_download_times_london": [
+      "2026-10-04T09:25:13.076026+01:00"
+    ],
+    "output_download_time_london": "2026-10-04T09:26:44.491171+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/043_pair/input.jpeg": "4085255f6248f44182a992fd3bd9f5b4f7def90dce0c17b3de9fbf7c8e5d845f",
+      "pairs/043_pair/output.png": "6accf20a71143cfa2c1de64a0aa9649edd33f71cf4f85200a035932f072bd04f"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "044_pair",
+    "inputs": [
+      "pairs/044_pair/input.avif"
+    ],
+    "input": "pairs/044_pair/input.avif",
+    "output": "pairs/044_pair/output.png",
+    "input_filenames": [
+      "JR+SUPERFLY+11+ACAD+FGMG+KM+LK.avif"
+    ],
+    "output_filename": "Graphite football boot coloring page.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-143",
+    "input_download_times_london": [
+      "2026-10-06T19:30:58.696771+01:00"
+    ],
+    "output_download_time_london": "2026-10-06T19:34:25.007469+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/044_pair/input.avif": "b958e96e05a3b297c9d53eed82ea0c9ae4cc4441d763b0adee7df2385997293f",
+      "pairs/044_pair/output.png": "01a4ab300c488bc40de06121abf5ea05a07ba1385ae6595aa96c7ec5f6a1f799"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "045_pair",
+    "inputs": [
+      "pairs/045_pair/input_corrected_20261017.png"
+    ],
+    "input": "pairs/045_pair/input_corrected_20261017.png",
+    "output": "pairs/045_pair/output.png",
+    "input_filenames": [
+      "Screenshot 2026-10-17 at 19.08.27.png"
+    ],
+    "output_filename": "Graphite Football Boot Side Profile.png",
+    "confidence": "user_confirmed",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-143",
+    "input_download_times_london": [
+      "2026-10-06T19:30:58.696771+01:00"
+    ],
+    "output_download_time_london": "2026-10-06T19:36:24.298018+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "The user supplied the corrected original for pair 045 in this chat on 17 October 2026.",
+    "notes": "Likely a further boot variant: brand marks, upper texture and sole details differ from the available reference. Do not treat as an exact reproduction.",
+    "file_sha256": {
+      "pairs/045_pair/input.avif": "b958e96e05a3b297c9d53eed82ea0c9ae4cc4441d763b0adee7df2385997293f",
+      "pairs/045_pair/output.png": "951bf12eb323c3f7187de821735c3ff1be29e992ebf927d68fc9e67ade80446a",
+      "pairs/045_pair/input_corrected_20261017.png": "c22151599e41f3c768b356bd52a1ce58bc2886760fc45cf9947cf5f24b5d80ea"
+    },
+    "review_notes": "",
+    "previous_inputs": [
+      "pairs/045_pair/input.avif"
+    ],
+    "source_correction": {
+      "source": "/Users/kiparis/Desktop/Screenshot 2026-10-17 at 19.08.27.png",
+      "sha256": "c22151599e41f3c768b356bd52a1ce58bc2886760fc45cf9947cf5f24b5d80ea",
+      "date": "2026-10-17",
+      "regeneration_requested": false,
+      "note": "The user explicitly requested keeping the ongoing generation unchanged. Model results for this pair use the previous input and are not a valid comparison against the corrected original."
+    }
+  },
+  {
+    "id": "046_pair",
+    "inputs": [
+      "pairs/046_pair/input.jpeg"
+    ],
+    "input": "pairs/046_pair/input.jpeg",
+    "output": "pairs/046_pair/output.png",
+    "input_filenames": [
+      "Kylian Mbappé 🇫🇷.jpeg"
+    ],
+    "output_filename": "Mbappé in a Real Madrid graphite portrait.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-148",
+    "input_download_times_london": [
+      "2026-10-09T20:05:48.778536+01:00"
+    ],
+    "output_download_time_london": "2026-10-09T20:07:50.173905+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/046_pair/input.jpeg": "71f18fbd14a1f91c2804fe8f5ee8bf00823e1dbc276791e64907d604bd363afe",
+      "pairs/046_pair/output.png": "26b37a1d61510efca250acc03b1448640a166e00b7ef0cdd3620aa5a9412a116"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "047_pair",
+    "inputs": [
+      "pairs/047_pair/input.jpeg"
+    ],
+    "input": "pairs/047_pair/input.jpeg",
+    "output": "pairs/047_pair/output.png",
+    "input_filenames": [
+      "Christiano Ronaldo and Lamine Yamal.jpeg"
+    ],
+    "output_filename": "Yamal and Ronaldo Football Coloring Page.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-150",
+    "input_download_times_london": [
+      "2026-10-09T20:09:19.238397+01:00"
+    ],
+    "output_download_time_london": "2026-10-09T20:10:43.775153+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/047_pair/input.jpeg": "f5667024ef7ca29f28fd1ef7fd2e46514d956088c58072e1e17b900568bc8287",
+      "pairs/047_pair/output.png": "4b8546d54af54e661d2a7e3e3fbee36e928c86bd1b207b5ce2eaf6761aed7a84"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "048_pair",
+    "inputs": [
+      "pairs/048_pair/input.jpeg"
+    ],
+    "input": "pairs/048_pair/input.jpeg",
+    "output": "pairs/048_pair/output.png",
+    "input_filenames": [
+      "Cristiano Ronaldo (5).jpeg"
+    ],
+    "output_filename": "Ronaldo Celebrates with the Nations League Trophy.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-153",
+    "input_download_times_london": [
+      "2026-10-11T16:38:05.635535+01:00"
+    ],
+    "output_download_time_london": "2026-10-11T16:40:58.242638+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/048_pair/input.jpeg": "7e58b59be422fceaa863eee1b3f8e3eb9e7c8f22b60732b606175012cfebdda7",
+      "pairs/048_pair/output.png": "adf3b33bfc689d0e218c0a28976b954782e5f534ebdbb88f27481a9da5ed84fc"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "049_pair",
+    "inputs": [
+      "pairs/049_pair/input.jpeg"
+    ],
+    "input": "pairs/049_pair/input.jpeg",
+    "output": "pairs/049_pair/output.png",
+    "input_filenames": [
+      "_ (33).jpeg"
+    ],
+    "output_filename": "Ronaldo Bicycle Kick Coloring Page.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-157",
+    "input_download_times_london": [
+      "2026-10-11T16:41:27.816038+01:00"
+    ],
+    "output_download_time_london": "2026-10-11T16:49:02.630614+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/049_pair/input.jpeg": "97a920a298ef15c39be5e4caed7345a815732b837621dc3419810e8db14819e0",
+      "pairs/049_pair/output.png": "045cc134cb303b17460a5c10d0fdf349f523e567ba6dbfd9b9e5995b467637fc"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "050_pair",
+    "inputs": [
+      "pairs/050_pair/input.jpeg"
+    ],
+    "input": "pairs/050_pair/input.jpeg",
+    "output": "pairs/050_pair/output.png",
+    "input_filenames": [
+      "_ (34).jpeg"
+    ],
+    "output_filename": "Ronaldo’s airborne bicycle kick.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-159",
+    "input_download_times_london": [
+      "2026-10-11T16:41:59.850322+01:00"
+    ],
+    "output_download_time_london": "2026-10-11T17:02:51.137811+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/050_pair/input.jpeg": "4acf4c1b9b9ca4f22fadb272b01898b782816a5d4b33caec4ea7b28254c5a64c",
+      "pairs/050_pair/output.png": "37bfea95573b6d455b881818ba469bd9c61906a52be13e0c4f13e8338c20396f"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "051_pair",
+    "inputs": [
+      "pairs/051_pair/input.jpeg"
+    ],
+    "input": "pairs/051_pair/input.jpeg",
+    "output": "pairs/051_pair/output.png",
+    "input_filenames": [
+      "#CristianoRonaldo #Ronaldo #NationsLeague.jpeg"
+    ],
+    "output_filename": "Cristiano Ronaldo Graphite Football Portrait.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-165",
+    "input_download_times_london": [
+      "2026-10-12T20:27:46.307482+01:00"
+    ],
+    "output_download_time_london": "2026-10-12T20:30:18.129098+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/051_pair/input.jpeg": "2d8deb47627c1e0562c8cc97aba596c591a80bfdae00b0719b87eade0c05b079",
+      "pairs/051_pair/output.png": "ce8f2fe52ee23708b57e67c141b334c1b1228e8cb7dd3826d61464009bbe46d3"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "052_pair",
+    "inputs": [
+      "pairs/052_pair/input.jpeg"
+    ],
+    "input": "pairs/052_pair/input.jpeg",
+    "output": "pairs/052_pair/output.png",
+    "input_filenames": [
+      "Cristiano Ronaldo (6).jpeg"
+    ],
+    "output_filename": "Ronaldo in Portugal graphite colouring page.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-166",
+    "input_download_times_london": [
+      "2026-10-12T20:28:18.941359+01:00"
+    ],
+    "output_download_time_london": "2026-10-12T20:31:35.595959+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/052_pair/input.jpeg": "7eb4b1204b82e4dd6c1dae1b03137c0e8f33c2cb029979014bcbf9cd665ac220",
+      "pairs/052_pair/output.png": "ca138aef9625ac751ca04f585d5888e7b8ab6f5bc466fd86a5e38e127a3c09bd"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "053_pair",
+    "inputs": [
+      "pairs/053_pair/input.jpeg"
+    ],
+    "input": "pairs/053_pair/input.jpeg",
+    "output": "pairs/053_pair/output.png",
+    "input_filenames": [
+      "doué 🤩🤩🤩🤩🇫🇷🇫🇷🇫🇷🇫🇷.jpeg"
+    ],
+    "output_filename": "French footballer profile in graphite-1.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-171",
+    "input_download_times_london": [
+      "2026-10-12T20:38:35.481785+01:00"
+    ],
+    "output_download_time_london": "2026-10-12T20:41:41.767308+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/053_pair/input.jpeg": "fc7aeb3ec9cb4a75e66a5f5c9c55cd14eaa40472e89453ad90d7a1bd2a7fcffe",
+      "pairs/053_pair/output.png": "a413da54485b467e3a4bc5990336f46428bc4fb42f78d2d4868357d3f9cd29b8"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "054_pair",
+    "inputs": [
+      "pairs/054_pair/input.jpeg"
+    ],
+    "input": "pairs/054_pair/input.jpeg",
+    "output": "pairs/054_pair/output.png",
+    "input_filenames": [
+      "Désiré Doué.jpeg"
+    ],
+    "output_filename": "France Number 20 Graphite Portrait.png",
+    "confidence": "high",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-170",
+    "input_download_times_london": [
+      "2026-10-12T20:38:22.663527+01:00"
+    ],
+    "output_download_time_london": "2026-10-12T20:42:36.726068+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Subject, pose and distinctive details visually match. Review changes to shading, framing and background before training.",
+    "file_sha256": {
+      "pairs/054_pair/input.jpeg": "e81811931c08cf081cbcad9d73a64f151d78dd8ec4bbaf12e84d2a830cecfe6d",
+      "pairs/054_pair/output.png": "9c060425f989ffc758d3c7a32200f5bb8ccc99699a38582cf59f596a4bba4182"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "055_pair",
+    "inputs": [
+      "pairs/055_pair/input.jpeg"
+    ],
+    "input": "pairs/055_pair/input.jpeg",
+    "output": "pairs/055_pair/output.png",
+    "input_filenames": [
+      "images.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Sep 26, 2026, 07_09_23 PM.png",
+    "confidence": "medium",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "single_input",
+    "group": "source-120",
+    "input_download_times_london": [
+      "2026-09-26T19:07:52.124833+01:00"
+    ],
+    "output_download_time_london": "2026-09-26T19:09:23.966181+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Likely a shoe-style transformation, but mesh, laces and sole details differ. Confirm whether this was the intended reference.",
+    "file_sha256": {
+      "pairs/055_pair/input.jpeg": "c415d1d62b2a0d3e82222c6f0209c0f8b1e98d7852cfaa5d4fc661d22156e73b",
+      "pairs/055_pair/output.png": "294f5c5958f54af4de2ce0a66adf7791861caa8cce70471d99126aeec5c40a0d"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "056_composite",
+    "inputs": [
+      "pairs/056_composite/input_01.jpeg",
+      "pairs/056_composite/input_02.jpeg"
+    ],
+    "input": null,
+    "output": "pairs/056_composite/output.png",
+    "input_filenames": [
+      "Cristiano Ronaldo.jpeg",
+      "Raphinha (2).jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 18, 2026, 08_17_24 PM.png",
+    "confidence": "medium",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "multi_input",
+    "group": "source-12-13",
+    "input_download_times_london": [
+      "2026-08-18T20:12:44.698540+01:00",
+      "2026-08-18T20:12:50.776406+01:00"
+    ],
+    "output_download_time_london": "2026-08-18T20:17:29.767422+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Inferred multi-reference composition. Subjects appear to come from these inputs, but poses and layout change. Confirm every source; exclude from single-input training by default.",
+    "file_sha256": {
+      "pairs/056_composite/input_01.jpeg": "79d51055f2fc1e46bb8f5dd6ece5feeba875ab94268602c916f97774ac659959",
+      "pairs/056_composite/input_02.jpeg": "f1ea2668b50628ee3daa9cbb8eb65cce558db8df7bd6e0fb87da7c2518c8afb9",
+      "pairs/056_composite/output.png": "5c7090b7aaab9a671c477980f3d616f8a5a3903168030e31ce3ae4e808f231d0"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "057_composite",
+    "inputs": [
+      "pairs/057_composite/input_01.jpeg",
+      "pairs/057_composite/input_02.jpeg"
+    ],
+    "input": null,
+    "output": "pairs/057_composite/output.png",
+    "input_filenames": [
+      "Kylian Mbappé.jpeg",
+      "#CristianoRonaldo #Ronaldo #CR7 #FIFAWorldCup #Portugal.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 29, 2026, 02_07_31 PM.png",
+    "confidence": "medium",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "multi_input",
+    "group": "source-24-23",
+    "input_download_times_london": [
+      "2026-08-29T14:05:23.074875+01:00",
+      "2026-08-29T14:04:21.244059+01:00"
+    ],
+    "output_download_time_london": "2026-08-29T14:07:31.610666+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Inferred multi-reference composition. Subjects appear to come from these inputs, but poses and layout change. Confirm every source; exclude from single-input training by default.",
+    "file_sha256": {
+      "pairs/057_composite/input_01.jpeg": "4a118e96642b26e599e0333a031fab9cede4950f2cfd0460f28fbc11358eee8d",
+      "pairs/057_composite/input_02.jpeg": "6de66587ac017a7c58801522061dd84e3e730809f36114e9703d4b5f6deb2eb7",
+      "pairs/057_composite/output.png": "ee0889fd879f85e13f0772372b487823fae78c46b581ee0f8a74f09d1706a64b"
+    },
+    "review_notes": ""
+  },
+  {
+    "id": "058_composite",
+    "inputs": [
+      "pairs/058_composite/input_01.jpeg",
+      "pairs/058_composite/input_02.jpeg"
+    ],
+    "input": null,
+    "output": "pairs/058_composite/output.png",
+    "input_filenames": [
+      "Raphinha ~ Barcelona vs Real Betis.jpeg",
+      "#lamineyamal #spain #worldcup2026_.jpeg"
+    ],
+    "output_filename": "ChatGPT Image Aug 30, 2026, 03_05_38 PM.png",
+    "confidence": "medium",
+    "review_status": "approved",
+    "training_status": "reviewed_candidate",
+    "split": "unassigned",
+    "kind": "multi_input",
+    "group": "source-27-26",
+    "input_download_times_london": [
+      "2026-08-30T15:02:23.035105+01:00",
+      "2026-08-30T15:01:30.061333+01:00"
+    ],
+    "output_download_time_london": "2026-08-30T15:05:38.488243+01:00",
+    "source_chat_history_available": false,
+    "pairing_evidence": "Inferred from visual comparison, filenames and download chronology. Older chat turns are not exposed by the available chat reader; chronology is supporting evidence only.",
+    "notes": "Inferred multi-reference composition. Subjects appear to come from these inputs, but poses and layout change. Confirm every source; exclude from single-input training by default.",
+    "file_sha256": {
+      "pairs/058_composite/input_01.jpeg": "aaa28e47f058450aa4fc3dd783aee14bc9c3d2cde4e475967ad2beb573fa196c",
+      "pairs/058_composite/input_02.jpeg": "b31b5464c49e8dfd22490481e5d76d2eac3dafed9a79b72016a22ba0ea31b56f",
+      "pairs/058_composite/output.png": "aebb5aab45557f6549160947860c2adf1bca4884db5adb0ff2c6b72ee189a16c"
+    },
+    "review_notes": ""
+  }
+]

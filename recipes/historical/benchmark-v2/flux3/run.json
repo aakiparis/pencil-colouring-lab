@@ -1,0 +1,827 @@
+{
+  "run_id": "pencil-benchmark-v2-flux3",
+  "prefix": "benchmark-v2/flux3",
+  "model": {
+    "id": "black-forest-labs/flux-3-image-klein-base",
+    "revision": "3f7fa5ee22ca1d5a5cc095ac7cc96e6a173b4c86"
+  },
+  "pipeline": "flux3",
+  "additional_loras": [],
+  "dtype": "bfloat16",
+  "num_inference_steps": 50,
+  "target_pixels": 1048576,
+  "composite_size": [
+    1360,
+    768
+  ],
+  "tasks": [
+    {
+      "id": "001_kitten-bedspread",
+      "inputs": [
+        "pairs/001_kitten-bedspread/input.jpeg"
+      ],
+      "reference": "pairs/001_kitten-bedspread/output.png",
+      "kind": "single_input",
+      "source_group": "source-178",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "002_cat-la-streetwear",
+      "inputs": [
+        "pairs/002_cat-la-streetwear/input.jpeg"
+      ],
+      "reference": "pairs/002_cat-la-streetwear/output.png",
+      "kind": "single_input",
+      "source_group": "source-183",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "003_footballer-number-7",
+      "inputs": [
+        "pairs/003_footballer-number-7/input.jpeg"
+      ],
+      "reference": "pairs/003_footballer-number-7/output.png",
+      "kind": "single_input",
+      "source_group": "source-185",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "004_pair",
+      "inputs": [
+        "pairs/004_pair/input.jpeg"
+      ],
+      "reference": "pairs/004_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-0",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "005_pair",
+      "inputs": [
+        "pairs/005_pair/input.jpeg"
+      ],
+      "reference": "pairs/005_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-1",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "006_pair",
+      "inputs": [
+        "pairs/006_pair/input.jpeg"
+      ],
+      "reference": "pairs/006_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-4",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "007_pair",
+      "inputs": [
+        "pairs/007_pair/input.jpeg"
+      ],
+      "reference": "pairs/007_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-6",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "008_pair",
+      "inputs": [
+        "pairs/008_pair/input.jpeg"
+      ],
+      "reference": "pairs/008_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-10",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "009_pair",
+      "inputs": [
+        "pairs/009_pair/input.jpeg"
+      ],
+      "reference": "pairs/009_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-20",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "010_pair",
+      "inputs": [
+        "pairs/010_pair/input.jpeg"
+      ],
+      "reference": "pairs/010_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-30",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "011_pair",
+      "inputs": [
+        "pairs/011_pair/input.jpeg"
+      ],
+      "reference": "pairs/011_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-26",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "012_pair",
+      "inputs": [
+        "pairs/012_pair/input.jpeg"
+      ],
+      "reference": "pairs/012_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-32",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "013_pair",
+      "inputs": [
+        "pairs/013_pair/input.jpeg"
+      ],
+      "reference": "pairs/013_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-36",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "014_pair",
+      "inputs": [
+        "pairs/014_pair/input.jpeg"
+      ],
+      "reference": "pairs/014_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-37",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "015_pair",
+      "inputs": [
+        "pairs/015_pair/input.jpeg"
+      ],
+      "reference": "pairs/015_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-41",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "016_pair",
+      "inputs": [
+        "pairs/016_pair/input.jpeg"
+      ],
+      "reference": "pairs/016_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-42",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "017_pair",
+      "inputs": [
+        "pairs/017_pair/input.jpeg"
+      ],
+      "reference": "pairs/017_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-52",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "018_pair",
+      "inputs": [
+        "pairs/018_pair/input.jpeg"
+      ],
+      "reference": "pairs/018_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-53",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "019_pair",
+      "inputs": [
+        "pairs/019_pair/input.jpeg"
+      ],
+      "reference": "pairs/019_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-56",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "020_pair",
+      "inputs": [
+        "pairs/020_pair/input.jpeg"
+      ],
+      "reference": "pairs/020_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-57",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "021_pair",
+      "inputs": [
+        "pairs/021_pair/input.jpeg"
+      ],
+      "reference": "pairs/021_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-61",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "022_pair",
+      "inputs": [
+        "pairs/022_pair/input.jpeg"
+      ],
+      "reference": "pairs/022_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-62",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "the bg should remain white",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "023_pair",
+      "inputs": [
+        "pairs/023_pair/input.jpeg"
+      ],
+      "reference": "pairs/023_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-68",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "024_pair",
+      "inputs": [
+        "pairs/024_pair/input.jpeg"
+      ],
+      "reference": "pairs/024_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-72",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "025_pair",
+      "inputs": [
+        "pairs/025_pair/input.jpeg"
+      ],
+      "reference": "pairs/025_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-70",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "027_pair",
+      "inputs": [
+        "pairs/027_pair/input.jpeg"
+      ],
+      "reference": "pairs/027_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-77",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "028_pair",
+      "inputs": [
+        "pairs/028_pair/input.jpeg"
+      ],
+      "reference": "pairs/028_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-78",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "029_pair",
+      "inputs": [
+        "pairs/029_pair/input.jpeg"
+      ],
+      "reference": "pairs/029_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-82",
+      "prompt": "Draw the whole Bugatti from the photograph, completing only the cropped parts of the car consistently with its visible design and perspective. Retain the person with the car, with the same appearance and pose. Do not omit the person. Use a clean white background. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "the car was explicitly asked to be fully drawn; in recult cr7 is missing on the car unfortuntaley.",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "030_pair",
+      "inputs": [
+        "pairs/030_pair/input.jpeg"
+      ],
+      "reference": "pairs/030_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-88",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "031_pair",
+      "inputs": [
+        "pairs/031_pair/input.jpeg"
+      ],
+      "reference": "pairs/031_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-91",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "032_pair",
+      "inputs": [
+        "pairs/032_pair/input.jpeg"
+      ],
+      "reference": "pairs/032_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-94",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "033_pair",
+      "inputs": [
+        "pairs/033_pair/input.jpeg"
+      ],
+      "reference": "pairs/033_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-95",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "034_pair",
+      "inputs": [
+        "pairs/034_pair/input.jpeg"
+      ],
+      "reference": "pairs/034_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-115",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "035_pair",
+      "inputs": [
+        "pairs/035_pair/input.jpeg"
+      ],
+      "reference": "pairs/035_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-116",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "036_pair",
+      "inputs": [
+        "pairs/036_pair/input.jpeg"
+      ],
+      "reference": "pairs/036_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-123",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "037_pair",
+      "inputs": [
+        "pairs/037_pair/input.jpeg"
+      ],
+      "reference": "pairs/037_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-125",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "038_pair",
+      "inputs": [
+        "pairs/038_pair/input.jpeg"
+      ],
+      "reference": "pairs/038_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-130",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "039_pair",
+      "inputs": [
+        "pairs/039_pair/input.jpeg"
+      ],
+      "reference": "pairs/039_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-133",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "result shold have just a bit less intense",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "041_pair",
+      "inputs": [
+        "pairs/041_pair/input.jpeg"
+      ],
+      "reference": "pairs/041_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-136",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "042_pair",
+      "inputs": [
+        "pairs/042_pair/input.jpeg"
+      ],
+      "reference": "pairs/042_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-139",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "043_pair",
+      "inputs": [
+        "pairs/043_pair/input.jpeg"
+      ],
+      "reference": "pairs/043_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-141",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "044_pair",
+      "inputs": [
+        "pairs/044_pair/input.avif"
+      ],
+      "reference": "pairs/044_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-143",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "045_pair",
+      "inputs": [
+        "pairs/045_pair/input.avif"
+      ],
+      "reference": "pairs/045_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-143",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "046_pair",
+      "inputs": [
+        "pairs/046_pair/input.jpeg"
+      ],
+      "reference": "pairs/046_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-148",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "047_pair",
+      "inputs": [
+        "pairs/047_pair/input.jpeg"
+      ],
+      "reference": "pairs/047_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-150",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "048_pair",
+      "inputs": [
+        "pairs/048_pair/input.jpeg"
+      ],
+      "reference": "pairs/048_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-153",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. Give the trophy clear, accurate contours and recognisable fine details; keep the face sharply defined.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "049_pair",
+      "inputs": [
+        "pairs/049_pair/input.jpeg"
+      ],
+      "reference": "pairs/049_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-157",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. Keep the ball clearly visible and precisely outlined, separated from the background.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "050_pair",
+      "inputs": [
+        "pairs/050_pair/input.jpeg"
+      ],
+      "reference": "pairs/050_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-159",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "051_pair",
+      "inputs": [
+        "pairs/051_pair/input.jpeg"
+      ],
+      "reference": "pairs/051_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-165",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "052_pair",
+      "inputs": [
+        "pairs/052_pair/input.jpeg"
+      ],
+      "reference": "pairs/052_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-166",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "053_pair",
+      "inputs": [
+        "pairs/053_pair/input.jpeg"
+      ],
+      "reference": "pairs/053_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-171",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove the incidental boy in the corner and all other background people. Emphasise only the main photographic subject on a clean white background. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "054_pair",
+      "inputs": [
+        "pairs/054_pair/input.jpeg"
+      ],
+      "reference": "pairs/054_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-170",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove incidental background people and distracting scenery. Use a clean white or very lightly indicated background so the main subject stands out. Do not reconstruct detail in blurred areas. Separate the subject clearly from the background with precise contours. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "055_pair",
+      "inputs": [
+        "pairs/055_pair/input.jpeg"
+      ],
+      "reference": "pairs/055_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-120",
+      "prompt": "A faithful pencil drawing of only the pair of trainers shown in the reference photograph, on a plain white background. Match the exact shoes, their number, arrangement, viewing angle, silhouette, sole construction, mesh, laces and logos. Keep the product composition one-to-one with the reference. Do not add a person, legs, a runner or scenery. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "056_composite",
+      "inputs": [
+        "pairs/056_composite/input_01.jpeg",
+        "pairs/056_composite/input_02.jpeg"
+      ],
+      "reference": "pairs/056_composite/output.png",
+      "kind": "multi_input",
+      "source_group": "source-12-13",
+      "prompt": "Create one coherent drawing with both main subjects from the two supplied images. Place the subject from image 1 on the left and the subject from image 2 on the right, beside each other at a compatible scale with clear space between them. Keep both subjects complete within their original visible framing, recognisable and distinct; preserve their identities, poses, expressions and clothing. Neither subject may cover, merge into or replace the other. Remove both original backgrounds and all incidental people. Put both subjects on the same clean white background. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "057_composite",
+      "inputs": [
+        "pairs/057_composite/input_01.jpeg",
+        "pairs/057_composite/input_02.jpeg"
+      ],
+      "reference": "pairs/057_composite/output.png",
+      "kind": "multi_input",
+      "source_group": "source-24-23",
+      "prompt": "Create one coherent drawing with both main subjects from the two supplied images. Place the subject from image 1 on the left and the subject from image 2 on the right, beside each other at a compatible scale with clear space between them. Keep both subjects complete within their original visible framing, recognisable and distinct; preserve their identities, poses, expressions and clothing. Neither subject may cover, merge into or replace the other. Remove both original backgrounds and all incidental people. Put both subjects on the same clean white background. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    },
+    {
+      "id": "058_composite",
+      "inputs": [
+        "pairs/058_composite/input_01.jpeg",
+        "pairs/058_composite/input_02.jpeg"
+      ],
+      "reference": "pairs/058_composite/output.png",
+      "kind": "multi_input",
+      "source_group": "source-27-26",
+      "prompt": "Create one coherent drawing with both main subjects from the two supplied images. Place the subject from image 1 on the left and the subject from image 2 on the right, beside each other at a compatible scale with clear space between them. Keep both subjects complete within their original visible framing, recognisable and distinct; preserve their identities, poses, expressions and clothing. Neither subject may cover, merge into or replace the other. Remove both original backgrounds and all incidental people. Put both subjects on the same clean white background. Render a realistic black-and-white graphite pencil drawing suitable for children to colour. Use crisp, clearly defined subject contours, selective deep black accents and a full but restrained tonal range. Keep large clothing and object surfaces light and open for colouring. Use natural short pencil strokes and smooth, subtle shading; avoid long parallel stripes, mechanical hatching, blurred outlines and uniform grey fills. Preserve recognisable identity and fine details of the main subject. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Corrected from the completed user baseline review; task-specific overrides retained.",
+      "prompt_version": "feedback-v2"
+    }
+  ],
+  "smoke_ids": [
+    "055_pair",
+    "012_pair",
+    "056_composite"
+  ],
+  "prompt_feedback_sha256": "dc7ed1e36a52ba065f7e07ed9ff06886744b8d533d306e22a0907db310e34cd3",
+  "input_preprocessing": "EXIF orientation and RGB conversion; no external crop or enhancement.",
+  "software": {
+    "diffusers_commit": "b800f828f3951c4d206e154411bcbfa693cd322e",
+    "transformers": "5.20.1",
+    "accelerate": "1.15.0",
+    "huggingface_hub": "2.2.0",
+    "boto3": "1.43.114",
+    "Pillow": "13.0.0"
+  },
+  "comparison_note": "Prompts incorporate the user review; differences from baseline-v1 include both model and prompt changes.",
+  "prompt_upsampler": {
+    "id": "black-forest-labs/flux-3-image-klein-pup",
+    "revision": "3f3edb52b2c55de0d49feab28598b68f7f8e4830"
+  },
+  "prompt_upsampling": "Official FLUX caption expansion using the original reference images; expanded captions are saved."
+}

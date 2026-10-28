@@ -1,0 +1,27 @@
+{
+  "state": "user_selected_candidates",
+  "primary": {
+    "model": {
+      "id": "Qwen/Qwen-Image-2.1",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+    },
+    "training_run_key": "85946645ba52ea3e63711ee704cc59f1f05ebed9726acec1c124a7b562314fa3",
+    "checkpoint": 200,
+    "scale": 1,
+    "adapter_sha256": "fa532f149e5ad5940389bbb9ec2adbcad81501fa419378134d33e74549069192",
+    "benchmark_slug": "qwen21_lora200"
+  },
+  "fallback": {
+    "checkpoint": 100,
+    "scale": 1
+  },
+  "known_issue": "Residual colour on 014_pair. Raw generated images retained for full-dataset review; no automatic greyscale conversion authorised or applied.",
+  "evaluation_scope": "Full reviewed dataset; training and evaluation membership labelled. Future unbiased generalisation checks need new photographs.",
+  "review_status": "full_run_reviewed_with_material_content_failures",
+  "latest_assessment": {
+    "source": "user_dictated_overall_assessment",
+    "notes": "This full LoRA run contains substantial hallucinations: many outputs are very far from the requested content. Invented scenes and extra images, changed poses and anatomy, missing main characters, residual colour and inconsistent background handling are material failures. A monochrome conversion would not fix the content errors.",
+    "updated_at_utc": "2026-10-18T09:33:44.666831+00:00"
+  },
+  "next_training_authorised": false
+}

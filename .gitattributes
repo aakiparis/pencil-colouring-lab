@@ -1,0 +1,2 @@
+# Preserve historical source bytes, including upstream line endings and whitespace.
+archive/original/** -text -whitespace

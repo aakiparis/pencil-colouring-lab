@@ -1,0 +1,3612 @@
+{
+  "schema_version": 1,
+  "status": "user_targets_selected_agent_grouping_reviewed",
+  "dataset_root": "/Users/kiparis/Downloads/Pencil colouring dataset",
+  "instruction": "Create a pencil colouring page.",
+  "group_review_approved": true,
+  "target_selection_approved": true,
+  "notes": [
+    "No generated output is automatically approved as a training target.",
+    "Identity labels come from filenames, not face recognition. Confirm all included identities and near duplicates before freezing.",
+    "Keep connected co-occurring identities and near duplicates in a single split.",
+    "The first pilot is single-input only. Multi-input composition needs a separate trainer extension and evaluation.",
+    "Held-out photos must not be used for training, prompt changes or target tuning once the evaluation split is frozen."
+  ],
+  "rows": [
+    {
+      "id": "001_kitten-bedspread",
+      "inputs": [
+        {
+          "path": "pairs/001_kitten-bedspread/input.jpeg",
+          "sha256": "593f40c08a06b78facfb15417ce1e48e6eae7d6dcb76d9e2de92614d92d4f4a1"
+        }
+      ],
+      "source_group": "source-178",
+      "identities_inferred_from_filenames": [
+        "tabby_cat_identity_unconfirmed"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-64e5b8fe8e03",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/001_kitten-bedspread/output.png",
+          "sha256": "9645f2ab44a91965014ca29255997f86b8e244824a4c4772a671559e61a9999d",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/001_kitten-bedspread.png",
+          "sha256": "eaa8a3a7bfa0096995427a79713046fc68e7eecac606c435c8f54a90d21590f6",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/001_kitten-bedspread.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/001_kitten-bedspread.png",
+          "sha256": "5378757c192c74bf0549ab412c42105dfd9da607b78732c927c3c912c844e197",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/001_kitten-bedspread.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/001_kitten-bedspread/output.png",
+        "sha256": "9645f2ab44a91965014ca29255997f86b8e244824a4c4772a671559e61a9999d",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "002_cat-la-streetwear",
+      "inputs": [
+        {
+          "path": "pairs/002_cat-la-streetwear/input.jpeg",
+          "sha256": "dcce1bf1045de1e17c0f4d07537fdfff790eaafcc2a7367d4c1b6c3f5ce147c1"
+        }
+      ],
+      "source_group": "source-183",
+      "identities_inferred_from_filenames": [
+        "tabby_cat_identity_unconfirmed"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-64e5b8fe8e03",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/002_cat-la-streetwear/output.png",
+          "sha256": "1419733e29ec42fe621bbfce5330f091631763ab127ccabb79fefeddd087d3c1",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/002_cat-la-streetwear.png",
+          "sha256": "b7f7c00a65de9d57a15f93e813fda1d693338d22db145103a15987e4ff3ec8da",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/002_cat-la-streetwear.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/002_cat-la-streetwear.png",
+          "sha256": "77daee37dec34e96dc3779df24e06dd59bbd90e41aa3e51b50d844a2670a38b7",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/002_cat-la-streetwear.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/002_cat-la-streetwear.png",
+        "sha256": "77daee37dec34e96dc3779df24e06dd59bbd90e41aa3e51b50d844a2670a38b7",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/002_cat-la-streetwear.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "003_footballer-number-7",
+      "inputs": [
+        {
+          "path": "pairs/003_footballer-number-7/input.jpeg",
+          "sha256": "06d9daf103e3c9c34dafec5691abf82f661c429afc8015453becb472e10ece33"
+        }
+      ],
+      "source_group": "source-185",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/003_footballer-number-7/output.png",
+          "sha256": "ea730689c44af92667a1e6d03f8a907dc9da89f74ddbbcfb0b07d32879ccc7cd",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/003_footballer-number-7.png",
+          "sha256": "034b9c3e05dea02f462db118745a825576cabda40ded77d8ba176ef6977b388a",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/003_footballer-number-7.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/003_footballer-number-7.png",
+          "sha256": "65fbb2164145a7b885ed047284cf75b2b5671bc20296c34c26df70398579c028",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/003_footballer-number-7.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/003_footballer-number-7/output.png",
+        "sha256": "ea730689c44af92667a1e6d03f8a907dc9da89f74ddbbcfb0b07d32879ccc7cd",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Human identity is not established by filenames; resolve before training or evaluation."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "identity_review_basis": "Manual visual/source-context review; labels used conservatively to prevent cross-split leakage.",
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "004_pair",
+      "inputs": [
+        {
+          "path": "pairs/004_pair/input.jpeg",
+          "sha256": "f166d69dadb5933b509a989f26ec5a7e311d3def062494058ea7cdbe75d1ee45"
+        }
+      ],
+      "source_group": "source-0",
+      "identities_inferred_from_filenames": [
+        "raphinha"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-3daf38c76be9",
+      "split": "validation",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/004_pair/output.png",
+          "sha256": "56fecb81b98ab80d3d2d6327d200234a73e838f1583e464e2ca50faa7d32a6b9",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/004_pair.png",
+          "sha256": "a342b2a08664a3596150e385bfced27fa28942cd77e24703f8e6fa72c35728e2",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/004_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/004_pair.png",
+          "sha256": "2d3bbccf6f444d679377e951d9b31e64841301f05ccc2aac5b5188d93fe91391",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/004_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/004_pair.png",
+        "sha256": "2d3bbccf6f444d679377e951d9b31e64841301f05ccc2aac5b5188d93fe91391",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/004_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Human identity is not established by filenames; resolve before training or evaluation."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "identity_review_basis": "Manual visual/source-context review; labels used conservatively to prevent cross-split leakage.",
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "005_pair",
+      "inputs": [
+        {
+          "path": "pairs/005_pair/input.jpeg",
+          "sha256": "8822e51f0e14ad096e7a5f87b4e43721a71c735c4d5dfa5d09e7924c288eabd8"
+        }
+      ],
+      "source_group": "source-1",
+      "identities_inferred_from_filenames": [],
+      "grouping_confirmed": true,
+      "group_id": "group-58fab69fb7c5",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/005_pair/output.png",
+          "sha256": "9b80813d7c5ad25239108a92bf6c19a7d2dd92a6eafd964b2e6733692e809fda",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/005_pair.png",
+          "sha256": "addf5b94d33bc6e7fac0960d5d20ccdf45778a5afff9f712e46826ecd5cde852",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/005_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/005_pair.png",
+          "sha256": "0bfbcf7798edcfc9fae6f83d29539c54a0549532f99d444bdd72cbd858fc3df9",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/005_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/005_pair.png",
+        "sha256": "0bfbcf7798edcfc9fae6f83d29539c54a0549532f99d444bdd72cbd858fc3df9",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/005_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Human identity is not established by filenames; resolve before training or evaluation."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "provisional_filename_grouping_requires_review",
+      "include_in_pilot": false,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot.",
+      "pilot_exclusion_reason": "Multi-person montage joins training and held-out identities; retained as an approved target but excluded from this first pilot."
+    },
+    {
+      "id": "006_pair",
+      "inputs": [
+        {
+          "path": "pairs/006_pair/input.jpeg",
+          "sha256": "13fce94dbdab6a12740574fcd7015ab40b268921b5039fd0072bbbddd1134466"
+        }
+      ],
+      "source_group": "source-4",
+      "identities_inferred_from_filenames": [
+        "raphinha"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-3daf38c76be9",
+      "split": "validation",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/006_pair/output.png",
+          "sha256": "27587526d4c55d56dfe8c434e9cbc28991aca7ad2a47ef23206b147c0fdbb5b3",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/006_pair.png",
+          "sha256": "980ead0e8e43c660e8d1284c67bc00cfeea894d0621e26f50945f9db198f8ef4",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/006_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/006_pair.png",
+          "sha256": "f7cf6f96029fc1e0924f39f037408808ba9500a01cfafb9545c34dbd0232a570",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/006_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/006_pair.png",
+        "sha256": "f7cf6f96029fc1e0924f39f037408808ba9500a01cfafb9545c34dbd0232a570",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/006_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "007_pair",
+      "inputs": [
+        {
+          "path": "pairs/007_pair/input.jpeg",
+          "sha256": "618c5f2dde0d3dd421f56078ed0acc850175c574b8a12ca120353664b38303ab"
+        }
+      ],
+      "source_group": "source-6",
+      "identities_inferred_from_filenames": [
+        "ronaldo",
+        "messi"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/007_pair/output.png",
+          "sha256": "1aab719cd384dc2be376ef34218bac394de465a939a539301e9b01d844c911a7",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/007_pair.png",
+          "sha256": "add7fced18d7b52450c2453ad977468d2e949faa0e628958ea9e6641fea8f5a8",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/007_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/007_pair.png",
+          "sha256": "b387d76b62c85a6d17aadb77096ecf11ecbaef5a34b3c5d8edd75409ab49c1cb",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/007_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/007_pair.png",
+        "sha256": "b387d76b62c85a6d17aadb77096ecf11ecbaef5a34b3c5d8edd75409ab49c1cb",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/007_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "008_pair",
+      "inputs": [
+        {
+          "path": "pairs/008_pair/input.jpeg",
+          "sha256": "93e7615e142d86fed75f42280b789518b9d1a538e67163e3a1c4b4b3a9fb705b"
+        }
+      ],
+      "source_group": "source-10",
+      "identities_inferred_from_filenames": [
+        "raphinha"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-3daf38c76be9",
+      "split": "validation",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/008_pair/output.png",
+          "sha256": "fbf49ea639ea4079584901c22cfdf3d884fc5b9dd54868ee687708c505463a0d",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/008_pair.png",
+          "sha256": "3974a48a6456ab37592d741a8e9c76669bb431254ea83e704f46d8dd0df910ac",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/008_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/008_pair.png",
+          "sha256": "4fd693c1356fd1afe5706140a2eca0cc4ac971a50a88047a80481675bb577108",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/008_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/008_pair.png",
+        "sha256": "4fd693c1356fd1afe5706140a2eca0cc4ac971a50a88047a80481675bb577108",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/008_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "009_pair",
+      "inputs": [
+        {
+          "path": "pairs/009_pair/input.jpeg",
+          "sha256": "9c41b44c2f5fce9c7f96a29dd84cda4d6e15d0a0dbad754b361a9ad68f797af2"
+        }
+      ],
+      "source_group": "source-20",
+      "identities_inferred_from_filenames": [
+        "yamal"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/009_pair/output.png",
+          "sha256": "18c5cfd362191e37d381bd71964e7d60be9d55fcc15d11f6d7058b874eb74449",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/009_pair.png",
+          "sha256": "1b04e60cd7e45097785c706c1c9b881a14ac92d7bea4f074ebcafde7846f9a5b",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/009_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/009_pair.png",
+          "sha256": "251da69a030786a25b54d4a25f792b05f4056382e1fba272979628b09e913218",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/009_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/009_pair.png",
+        "sha256": "251da69a030786a25b54d4a25f792b05f4056382e1fba272979628b09e913218",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/009_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "010_pair",
+      "inputs": [
+        {
+          "path": "pairs/010_pair/input.jpeg",
+          "sha256": "dec62100d5950679cba46218d8a7024c8bcc3346c3731c83c029245606d347aa"
+        }
+      ],
+      "source_group": "source-30",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/010_pair/output.png",
+          "sha256": "78a160604592f27ab873d2ce52a3283460ff0d19af3080d11688bab253dd29c4",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/010_pair.png",
+          "sha256": "e735e800042292c61575602d44d79737fac6cb0bafb598a76a564534352c301e",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/010_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/010_pair.png",
+          "sha256": "d94a59bd38456dd568f35fb0e26187da437993be9b4c77df2b3444ab44d10aed",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/010_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/010_pair/output.png",
+        "sha256": "78a160604592f27ab873d2ce52a3283460ff0d19af3080d11688bab253dd29c4",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "011_pair",
+      "inputs": [
+        {
+          "path": "pairs/011_pair/input.jpeg",
+          "sha256": "b31b5464c49e8dfd22490481e5d76d2eac3dafed9a79b72016a22ba0ea31b56f"
+        }
+      ],
+      "source_group": "source-26",
+      "identities_inferred_from_filenames": [
+        "yamal"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/011_pair/output.png",
+          "sha256": "2a7007dca262867f9a21ab120e54b80cabe354b6d590a9a37cbdbdc12ec2e5f3",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/011_pair.png",
+          "sha256": "970a4aaeb15a5b47cd97ac59bba1fe95604fd32845c14ecfa2fe260bbc8d1cfb",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/011_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/011_pair.png",
+          "sha256": "056a864a4d4bf72980810491615b242e5b1045586a3c439e0b213d6a06eb0fc8",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/011_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/011_pair/output.png",
+        "sha256": "2a7007dca262867f9a21ab120e54b80cabe354b6d590a9a37cbdbdc12ec2e5f3",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "012_pair",
+      "inputs": [
+        {
+          "path": "pairs/012_pair/input.jpeg",
+          "sha256": "aa4051045a51038b264b786d7235cbd8916fe9f584270139007d06a68e61bee3"
+        }
+      ],
+      "source_group": "source-32",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/012_pair/output.png",
+          "sha256": "888ebedb1bf61dd947acc66275c677cf563bf55327a5c0ddd939323d84324917",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/012_pair.png",
+          "sha256": "7bdb84f0b610e55b82896032cdfd1c4d7bffe9e5a016bd36db8a7715402482e7",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/012_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/012_pair.png",
+          "sha256": "2e82ec16581ca68aeed1db275e43a32f3b9647947a14049b85df6198dd5ebd43",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/012_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/012_pair/output.png",
+        "sha256": "888ebedb1bf61dd947acc66275c677cf563bf55327a5c0ddd939323d84324917",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "013_pair",
+      "inputs": [
+        {
+          "path": "pairs/013_pair/input.jpeg",
+          "sha256": "297705ccae9f7cf8daf7aee8b079ab67e3df250c7079725fee625a22a6a9cad1"
+        }
+      ],
+      "source_group": "source-36",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/013_pair/output.png",
+          "sha256": "9d618787a5e0f0ba895c20f82d55db8fbfb339917c829f2ed51f440b6fc18d75",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/013_pair.png",
+          "sha256": "ceb3a2f3181b561e7019073405bcf04f69d45dfadc51986d8af46ae5165d68cd",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/013_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/013_pair.png",
+          "sha256": "0f44d27cc982c544366730fc0fca027d7e7894919738035b95bdb17f3f249332",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/013_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/013_pair/output.png",
+        "sha256": "9d618787a5e0f0ba895c20f82d55db8fbfb339917c829f2ed51f440b6fc18d75",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "014_pair",
+      "inputs": [
+        {
+          "path": "pairs/014_pair/input.jpeg",
+          "sha256": "81aba3024536c4fb0165091c60da83aa32315591d28318d0e75b315cb12b6c04"
+        }
+      ],
+      "source_group": "source-37",
+      "identities_inferred_from_filenames": [
+        "bellingham"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-3898b4331122",
+      "split": "validation",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/014_pair/output.png",
+          "sha256": "8d37556a04316585540ccc4675e5d075e7edef524d049f3c077b5d3d2a3cb2e7",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/014_pair.png",
+          "sha256": "c479d9ffbde75df525536a22d2e88b455422fbf3fc2b49aea2345adcdd5b86ca",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/014_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/014_pair.png",
+          "sha256": "0c1d5269c9b836bd0d3ca582d5e400cf035d87a4b37b904442bb324245e9c619",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/014_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/014_pair/output.png",
+        "sha256": "8d37556a04316585540ccc4675e5d075e7edef524d049f3c077b5d3d2a3cb2e7",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "015_pair",
+      "inputs": [
+        {
+          "path": "pairs/015_pair/input.jpeg",
+          "sha256": "28ffc75e217819c37d445431bff5aa18b363bb284ddd611c321d1869dbce77ef"
+        }
+      ],
+      "source_group": "source-41",
+      "identities_inferred_from_filenames": [
+        "yamal"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/015_pair/output.png",
+          "sha256": "fcdf08ad707324c3b6f09c3ecbb2589e6110752fc81523c19d75b66ea8deffcb",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/015_pair.png",
+          "sha256": "b0be7ad735ea9d5161c7344ab9857679232f00af2062d7e7159f84a4a37a167e",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/015_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/015_pair.png",
+          "sha256": "93dbde8334b480610e7565843e28e41b19366d740045d313c8e0b2417fb1d66a",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/015_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/015_pair/output.png",
+        "sha256": "fcdf08ad707324c3b6f09c3ecbb2589e6110752fc81523c19d75b66ea8deffcb",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "016_pair",
+      "inputs": [
+        {
+          "path": "pairs/016_pair/input.jpeg",
+          "sha256": "1e063d0de0cc16072cb97dd9cc85b0e86d78212d1f41c14d6d7f9d9956caa852"
+        }
+      ],
+      "source_group": "source-42",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/016_pair/output.png",
+          "sha256": "a5c8cbbcee65cf36c0f1209a25084f57955ba331bb3db95763c22f099123c75f",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/016_pair.png",
+          "sha256": "01de76b4863fb77296ec57427872a0f7420b5e3448d8b7785a43317c0d64d548",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/016_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/016_pair.png",
+          "sha256": "27523eb4662790d6197a225c25449463b7b9a28f013096f384447f335d162a97",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/016_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/016_pair/output.png",
+        "sha256": "a5c8cbbcee65cf36c0f1209a25084f57955ba331bb3db95763c22f099123c75f",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "017_pair",
+      "inputs": [
+        {
+          "path": "pairs/017_pair/input.jpeg",
+          "sha256": "bc9a72fc8693a87e52f6b28b8043cf2053d8c96c7807a0938f3c40a8ffcc9b79"
+        }
+      ],
+      "source_group": "source-52",
+      "identities_inferred_from_filenames": [
+        "yamal",
+        "nico_williams"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/017_pair/output.png",
+          "sha256": "0f516c6bf986def5c26627aa6860802b9e0a95511af9be766142659f00947b98",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/017_pair.png",
+          "sha256": "88869a69592adcd56b8dae75348b28a43b4c1c56e4b4b048b9a67b6526d55540",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/017_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/017_pair.png",
+          "sha256": "914ef184e29ba5940ad8b050b66e4baf10e0f68dd32f729e6f365157dfb8cb18",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/017_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/017_pair/output.png",
+        "sha256": "0f516c6bf986def5c26627aa6860802b9e0a95511af9be766142659f00947b98",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "018_pair",
+      "inputs": [
+        {
+          "path": "pairs/018_pair/input.jpeg",
+          "sha256": "6740c6c7d465c4d63ede0c5392a52850959797d92801fd46d922f138cb1a4c62"
+        }
+      ],
+      "source_group": "source-53",
+      "identities_inferred_from_filenames": [
+        "ronaldo",
+        "diogo_costa"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/018_pair/output.png",
+          "sha256": "9cfad2b751fbb6ad6e39139b3ad92bd6d0267a89c0d9bb06b840a2172e6c74a9",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/018_pair.png",
+          "sha256": "dc432111f8edb0e46f721bd14cca8bb1152cfb6f40335e89c6022513ddcf4b4d",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/018_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/018_pair.png",
+          "sha256": "bd7e80b892fe2aae6d1ca777c33dbf4bc47e6963c35bb05541c39e39966cdf22",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/018_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/018_pair/output.png",
+        "sha256": "9cfad2b751fbb6ad6e39139b3ad92bd6d0267a89c0d9bb06b840a2172e6c74a9",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "019_pair",
+      "inputs": [
+        {
+          "path": "pairs/019_pair/input.jpeg",
+          "sha256": "bc2ac311e53bd000d4aaab022f800eed6ecd77e978304d077b3ddb80b907686c"
+        }
+      ],
+      "source_group": "source-56",
+      "identities_inferred_from_filenames": [
+        "ronaldo",
+        "garnacho"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/019_pair/output.png",
+          "sha256": "0aeb162acc6c53b56c3b03ef9a37ffcc631efaedf016735ef4f51abd49784ef4",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/019_pair.png",
+          "sha256": "13c422246c31b1239c92c0ade3a2115b05410d2c8199b8af80756f9239b3c674",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/019_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/019_pair.png",
+          "sha256": "c00d9796b60fb7578eb3c1e5b9dade972925a661ece5c233597f5a5745c4646f",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/019_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/019_pair/output.png",
+        "sha256": "0aeb162acc6c53b56c3b03ef9a37ffcc631efaedf016735ef4f51abd49784ef4",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "020_pair",
+      "inputs": [
+        {
+          "path": "pairs/020_pair/input.jpeg",
+          "sha256": "d89098a13c023cdd766c8ada565927582b3ba167edc022f7da468b48806df6ed"
+        }
+      ],
+      "source_group": "source-57",
+      "identities_inferred_from_filenames": [
+        "ronaldo",
+        "diogo_costa"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/020_pair/output.png",
+          "sha256": "cefb03d89ec234c4bdd1ddd37c4c4408e41a4134a88b9cb1a30b2633633f5599",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/020_pair.png",
+          "sha256": "ebabcc6eb0ad94c1627da471852e8a0929be91b8fb5a2cd8c9a18ffd42f20545",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/020_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/020_pair.png",
+          "sha256": "ab1f3a0080bf8404a776622b165d9378fc1f8325c879731dcd54ea6f1caa2aef",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/020_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/020_pair/output.png",
+        "sha256": "cefb03d89ec234c4bdd1ddd37c4c4408e41a4134a88b9cb1a30b2633633f5599",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "021_pair",
+      "inputs": [
+        {
+          "path": "pairs/021_pair/input.jpeg",
+          "sha256": "6e399c3802a94567371a7fef6605c90f6b34562425b870c52df6a67fee627489"
+        }
+      ],
+      "source_group": "source-61",
+      "identities_inferred_from_filenames": [
+        "vinicius"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-9eea9d2bd750",
+      "split": "test",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/021_pair/output.png",
+          "sha256": "cf4908e3205a8f301f6ff901f355000539cbd4e545aa8ccb57056336fe584a7b",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/021_pair.png",
+          "sha256": "704f6832de5637f5b3b65e74256e37c6ba6f3fedd545a93463840de297e47063",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/021_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/021_pair.png",
+          "sha256": "e7cb84c6500d58566ac3d6114fc8d8391ecc6e967c69741ecfd95e5af886111e",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/021_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/021_pair/output.png",
+        "sha256": "cf4908e3205a8f301f6ff901f355000539cbd4e545aa8ccb57056336fe584a7b",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "022_pair",
+      "inputs": [
+        {
+          "path": "pairs/022_pair/input.jpeg",
+          "sha256": "11e63cc44b6e5bd6677a17f2714b9694d4e0345313eeefd31ffe09f350fd60af"
+        }
+      ],
+      "source_group": "source-62",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/022_pair/output.png",
+          "sha256": "48b9c9be02081913614b4465569f4e57756df7fdb9e32fe6a29cf1c3c82cc2a8",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/022_pair.png",
+          "sha256": "a65ded2a4dffcb0674f4ec553ee254c8db9c91f3cbfbf6b0547d24b642b752d9",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/022_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/022_pair.png",
+          "sha256": "c182ec40be645fa4d36984025809944982f7a399e11503d4628cd017cc10008f",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/022_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/022_pair/output.png",
+        "sha256": "48b9c9be02081913614b4465569f4e57756df7fdb9e32fe6a29cf1c3c82cc2a8",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "023_pair",
+      "inputs": [
+        {
+          "path": "pairs/023_pair/input.jpeg",
+          "sha256": "0a99b5e69edeb4e70700f354b6d687c1996483401ea119c8d8fc3b63f755ab2e"
+        }
+      ],
+      "source_group": "source-68",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/023_pair/output.png",
+          "sha256": "236c550cb260a8c6f1be7d45efd03e8b076435cf60f32cd7167579dc7614ab6c",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/023_pair.png",
+          "sha256": "813455bae9e82232e451870674d3ce1fc2aac620ab0edf75f89dd9232077e044",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/023_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/023_pair.png",
+          "sha256": "6e96b04725f3038335a0ab92fe3f4d28506a0c6a5ab15d7720ed42f663e6dd20",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/023_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/023_pair.png",
+        "sha256": "6e96b04725f3038335a0ab92fe3f4d28506a0c6a5ab15d7720ed42f663e6dd20",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/023_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "024_pair",
+      "inputs": [
+        {
+          "path": "pairs/024_pair/input.jpeg",
+          "sha256": "d75777cea78bebf0fd9949e13040a85f2c3759a99dedefa5d8f39767aee7df51"
+        }
+      ],
+      "source_group": "source-72",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/024_pair/output.png",
+          "sha256": "ab814e9c27831292829c5c95ec85fa27c818848a6a120591513f0bda03b96682",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/024_pair.png",
+          "sha256": "c0332f30af7393f96b79522dcef9f90994868dd4e57b494fcf8bd5c52775b8c4",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/024_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/024_pair.png",
+          "sha256": "a4fc9264577afb8411bd353049860caf2ebe88c3efe9de954527f17ea47ee0ce",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/024_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/024_pair/output.png",
+        "sha256": "ab814e9c27831292829c5c95ec85fa27c818848a6a120591513f0bda03b96682",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "025_pair",
+      "inputs": [
+        {
+          "path": "pairs/025_pair/input.jpeg",
+          "sha256": "38bc017674b28200759a44911b91038b72e3e3b4433d8e192be51d0b1c3bc3c2"
+        }
+      ],
+      "source_group": "source-70",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/025_pair/output.png",
+          "sha256": "e3a6d270c18994b99923e0a6dd88a314c01a9fcc18168d314ef4991870c2d332",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/025_pair.png",
+          "sha256": "1c8d3f01c4e908b71a2ffbdf86d626efb6a6565d020aa75e1667581c2905fb3a",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/025_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/025_pair.png",
+          "sha256": "d2aff8d84a409533ab71b1ce2e6484f81853ca45a8d9100e945a75da26ed69d8",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/025_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/025_pair/output.png",
+        "sha256": "e3a6d270c18994b99923e0a6dd88a314c01a9fcc18168d314ef4991870c2d332",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "026_pair",
+      "inputs": [
+        {
+          "path": "pairs/026_pair/input.jpeg",
+          "sha256": "9859da90aa65352f32d47ae8a11ecdc51f8445f74e9a80afa1f3ad62e7c46e11"
+        }
+      ],
+      "source_group": "source-75",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": false,
+      "group_id": "group-3cdfc4b80a7c",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/026_pair/output.png",
+          "sha256": "daf81fa1a6d6ad1582877f0f2cabf7dd6e91fd18f69f5ce5b1c5b6f9e26b717b",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/026_pair.png",
+          "sha256": null,
+          "availability": "pending_generation",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/026_pair.png",
+          "sha256": null,
+          "availability": "pending_generation",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        }
+      ],
+      "selected_target": null,
+      "target_approval": "excluded_previous_review",
+      "geometry_review": "pending",
+      "eligibility_notes": [
+        "Pair was previously rejected."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "provisional_filename_grouping_requires_review",
+      "include_in_pilot": false,
+      "pilot_exclusion_reason": "Previously rejected pair, absent from the reviewed comparison."
+    },
+    {
+      "id": "027_pair",
+      "inputs": [
+        {
+          "path": "pairs/027_pair/input.jpeg",
+          "sha256": "6ebe01277c147ffedad22cf247aa8102b0a5ee1d80fe302ca5ec89173a839b8f"
+        }
+      ],
+      "source_group": "source-77",
+      "identities_inferred_from_filenames": [
+        "cheetah"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-c26e3b4fb759",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/027_pair/output.png",
+          "sha256": "1eb76ca401fcad56a02fdcddfa3678a0fcee493c0df8fb0193b62defef1d1d56",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/027_pair.png",
+          "sha256": "fffa366af0abd542ad626753b9d1195c386faa803f15909aedcd194f62d1b5ae",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/027_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/027_pair.png",
+          "sha256": "3dd5cabaab5014228f4142a9b923f7002de73573ba3fd0e00279fd09fe859e37",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/027_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/027_pair.png",
+        "sha256": "3dd5cabaab5014228f4142a9b923f7002de73573ba3fd0e00279fd09fe859e37",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/027_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Human identity is not established by filenames; resolve before training or evaluation."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "identity_review_basis": "Manual visual/source-context review; labels used conservatively to prevent cross-split leakage.",
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "028_pair",
+      "inputs": [
+        {
+          "path": "pairs/028_pair/input.jpeg",
+          "sha256": "de11a3f3ac544849c222250e1e4658241d7e3df278f99a2ad975c5d4acc5d04b"
+        }
+      ],
+      "source_group": "source-78",
+      "identities_inferred_from_filenames": [
+        "neymar"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-5a4ccd110735",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/028_pair/output.png",
+          "sha256": "7bb30a16515fdd74f7b11d86cf2791fbbddb439f0a9ac9e5e1bf5a524b8b6143",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/028_pair.png",
+          "sha256": "db6b5ba9ac756a5219d211f976d58da610faac3b510d506893f5562bce610fc6",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/028_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/028_pair.png",
+          "sha256": "2821488642599c013544bae97d34c6b80ae37be74b8a2085e86ea25960e73e9c",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/028_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/028_pair/output.png",
+        "sha256": "7bb30a16515fdd74f7b11d86cf2791fbbddb439f0a9ac9e5e1bf5a524b8b6143",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "029_pair",
+      "inputs": [
+        {
+          "path": "pairs/029_pair/input.jpeg",
+          "sha256": "56e3fe4bd3d6ad8d6a9b364fbdac9a7192d760043ff7d493b36de119a647519e"
+        }
+      ],
+      "source_group": "source-82",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-754dbf03551c",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/029_pair/output.png",
+          "sha256": "bce25b676dad7e65c0a9a3ab0b9b8af92a54ce1b9bdf571ebfe2c8ff775569e1",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/029_pair.png",
+          "sha256": "9777691e37daf40937937951fe60375b02772b30360bf85995b479e42c0f146a",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/029_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/029_pair.png",
+          "sha256": "85f00bdac6aa7606253ca93d85bb9822f784078a1deed8d5cf436f655706389c",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/029_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/029_pair/output.png",
+        "sha256": "bce25b676dad7e65c0a9a3ab0b9b8af92a54ce1b9bdf571ebfe2c8ff775569e1",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Human identity is not established by filenames; resolve before training or evaluation."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "provisional_filename_grouping_requires_review",
+      "include_in_pilot": false,
+      "identity_review_basis": "Manual visual/source-context review; labels used conservatively to prevent cross-split leakage.",
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot.",
+      "pilot_exclusion_reason": "Approved target completes/reframes the cropped car; excluded from the style-only pilot to avoid teaching outpainting."
+    },
+    {
+      "id": "030_pair",
+      "inputs": [
+        {
+          "path": "pairs/030_pair/input.jpeg",
+          "sha256": "5dba6d8473d614c56b296e6c10339fb66f31bf9347e1cd24044c9cf5ba0a4198"
+        }
+      ],
+      "source_group": "source-88",
+      "identities_inferred_from_filenames": [
+        "ronaldo",
+        "unidentified_blue_shirt_companion"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/030_pair/output.png",
+          "sha256": "9c8d45abfa4cc1707af95ae27c18e945221a5c0abd28f200c10119fc5ab3bf28",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/030_pair.png",
+          "sha256": "83c9ab143cc21371d953c00c0c3669f8c1250a0f9dc2f1bfdb611f93f5b9f664",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/030_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/030_pair.png",
+          "sha256": "9e642405256720cdf58049eb818f5e399378ff2f1f4ac01face9cb061563b298",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/030_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/030_pair/output.png",
+        "sha256": "9c8d45abfa4cc1707af95ae27c18e945221a5c0abd28f200c10119fc5ab3bf28",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Human identity is not established by filenames; resolve before training or evaluation."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "identity_review_basis": "Manual visual/source-context review; labels used conservatively to prevent cross-split leakage.",
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "031_pair",
+      "inputs": [
+        {
+          "path": "pairs/031_pair/input.jpeg",
+          "sha256": "9d18fddd3540616e555242f8d9f7fff78c74f7be599ed5ed7db581cac4b4082f"
+        }
+      ],
+      "source_group": "source-91",
+      "identities_inferred_from_filenames": [
+        "vinicius"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-9eea9d2bd750",
+      "split": "test",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/031_pair/output.png",
+          "sha256": "94af5d985a6ef75d6686b03075df6ec11efc4e57ddd8a99a39588ded693d3932",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/031_pair.png",
+          "sha256": "e944cc8066cff1b10b7e729b89e56c7811a0a56b6a34309d0a235e2010ab6934",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/031_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/031_pair.png",
+          "sha256": "ec21753a70b85a39734b5fbdefc3c14523d33bc55f508a6ec82a419b7417c034",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/031_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/031_pair/output.png",
+        "sha256": "94af5d985a6ef75d6686b03075df6ec11efc4e57ddd8a99a39588ded693d3932",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "032_pair",
+      "inputs": [
+        {
+          "path": "pairs/032_pair/input.jpeg",
+          "sha256": "1785b79805b80b42a022bb39b9adbb134e684a7b99ca5718b6eed6204b877395"
+        }
+      ],
+      "source_group": "source-94",
+      "identities_inferred_from_filenames": [
+        "yamal"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/032_pair/output.png",
+          "sha256": "95ed098365ef037335c6a69ccf2e785fa2f23dc3b8241fd510b648501d251368",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/032_pair.png",
+          "sha256": "23093090047f80a36e9fcf59feef6a1ea65ce38f341668b5a7e0b313ee8690fb",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/032_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/032_pair.png",
+          "sha256": "d8ba53f44569d96bb5200414f4a444e8fdaeecf4ca4efc32b3f8178461da03eb",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/032_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/032_pair/output.png",
+        "sha256": "95ed098365ef037335c6a69ccf2e785fa2f23dc3b8241fd510b648501d251368",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "033_pair",
+      "inputs": [
+        {
+          "path": "pairs/033_pair/input.jpeg",
+          "sha256": "428b545aac0e644f52460e531f9830892c611b90ed9c81edd36500cd035637de"
+        }
+      ],
+      "source_group": "source-95",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/033_pair/output.png",
+          "sha256": "e4495ecca622906f0eca2e7cacf030b503bc5bb97470bf5824757eb0abc2cac0",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/033_pair.png",
+          "sha256": "323f7a69ef84e35fd35fbbd636535d4f17369fa2023feece773b841c14d88eee",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/033_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/033_pair.png",
+          "sha256": "eae2e6d3c28ddaad695f6169459ca65ea54f21f18603a9bfcbe36355196057dd",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/033_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/033_pair/output.png",
+        "sha256": "e4495ecca622906f0eca2e7cacf030b503bc5bb97470bf5824757eb0abc2cac0",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "034_pair",
+      "inputs": [
+        {
+          "path": "pairs/034_pair/input.jpeg",
+          "sha256": "d58c9e0eb24ce9372f20aab0c254c66735c5cd698d8e64768dcca59e89b5607c"
+        }
+      ],
+      "source_group": "source-115",
+      "identities_inferred_from_filenames": [
+        "yamal"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/034_pair/output.png",
+          "sha256": "28d23b51234fe16795a7a8c8427774efcbbc68fbc9ab939846c9a8edf3e7a146",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/034_pair.png",
+          "sha256": "59e18038558185a101fb11fd20b890e7c72425c73915da24a471059310eded34",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/034_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/034_pair.png",
+          "sha256": "f2574be22990e37eb3df33edde7e7f75a514fe413f26eee45e0cec83c8a53a43",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/034_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/034_pair/output.png",
+        "sha256": "28d23b51234fe16795a7a8c8427774efcbbc68fbc9ab939846c9a8edf3e7a146",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "035_pair",
+      "inputs": [
+        {
+          "path": "pairs/035_pair/input.jpeg",
+          "sha256": "72fff6468f2c3bcf6889e4f12a5dcdc0983bfb9fb2a7b1f8107556e0da948362"
+        }
+      ],
+      "source_group": "source-116",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/035_pair/output.png",
+          "sha256": "6542cc4091010f706bb4af7b2b89de93f8680065d147f9d959ece94b6613278f",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/035_pair.png",
+          "sha256": "d776a511367c874858f9eca815e9cba40a6e00b4199d5fb2912e99a3f75d3c94",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/035_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/035_pair.png",
+          "sha256": "d956565b41e236213cc45619b9b60acdf48080a48c17979cdf280d20005844b0",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/035_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/035_pair/output.png",
+        "sha256": "6542cc4091010f706bb4af7b2b89de93f8680065d147f9d959ece94b6613278f",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "036_pair",
+      "inputs": [
+        {
+          "path": "pairs/036_pair/input.jpeg",
+          "sha256": "aebfe3f45b69d1cf2f8cb19a7fbe500e687f4ada4d77cbbb3d7e22f7f87a6967"
+        }
+      ],
+      "source_group": "source-123",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/036_pair/output.png",
+          "sha256": "6981c6c134b48033d2a563ab0ee2bd20974edd42c7e308f9bce97357ea749cb0",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/036_pair.png",
+          "sha256": "f637ff8bcc02e7bf548352725dffc1d0a2a630f98838a1888bc9f0b718792d01",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/036_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/036_pair.png",
+          "sha256": "75e7ebac4e2ac00a85b5e153f52f15d3e79172aae25e1253a5754da47616364d",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/036_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/036_pair.png",
+        "sha256": "75e7ebac4e2ac00a85b5e153f52f15d3e79172aae25e1253a5754da47616364d",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/036_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "037_pair",
+      "inputs": [
+        {
+          "path": "pairs/037_pair/input.jpeg",
+          "sha256": "45a8e20563e3dadb9d71c604b399c43f60bfc67fb74ab13c40a04617b69973f8"
+        }
+      ],
+      "source_group": "source-125",
+      "identities_inferred_from_filenames": [
+        "camavinga"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-5186baf700e4",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/037_pair/output.png",
+          "sha256": "79a7b69611157f91b6c2fad598c2348dae4ac1a2cadb7432820eb41f41d562a2",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/037_pair.png",
+          "sha256": "a478c9e209fe5c42a5e36356b27e08494e8ae2fdebd5b689d36596506bf59c18",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/037_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/037_pair.png",
+          "sha256": "81df708898a0bdc40fb55454742c723ca9e7508cda4d921055f1ebb2018151ed",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/037_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/037_pair/output.png",
+        "sha256": "79a7b69611157f91b6c2fad598c2348dae4ac1a2cadb7432820eb41f41d562a2",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "038_pair",
+      "inputs": [
+        {
+          "path": "pairs/038_pair/input.jpeg",
+          "sha256": "1012a51de30d6ddaa712e21a509ca06ad590033095a7fe6a5b05f39f498fc67f"
+        }
+      ],
+      "source_group": "source-130",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/038_pair/output.png",
+          "sha256": "e5a04044038e9515f113c3baf6bcb8a67d1c2833d375a351c2db48bf62fa8ba1",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/038_pair.png",
+          "sha256": "2b1a5b2156836a8eddd017a043a15d8f826f9f1abb89e79f09d8961b658d305c",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/038_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/038_pair.png",
+          "sha256": "b73a322f5baba68aaf47b3ab8fee6dae11ea91f25d580009c864e95c40b3955c",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/038_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/038_pair/output.png",
+        "sha256": "e5a04044038e9515f113c3baf6bcb8a67d1c2833d375a351c2db48bf62fa8ba1",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Human identity is not established by filenames; resolve before training or evaluation."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "identity_review_basis": "Manual visual/source-context review; labels used conservatively to prevent cross-split leakage.",
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "039_pair",
+      "inputs": [
+        {
+          "path": "pairs/039_pair/input.jpeg",
+          "sha256": "0adb30069e7ef8dc038a8a108e95b5f714bb3dc6bd0da017ab3d7e94cb60b0d2"
+        }
+      ],
+      "source_group": "source-133",
+      "identities_inferred_from_filenames": [
+        "ronaldo",
+        "garnacho"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/039_pair/output.png",
+          "sha256": "1c9640a639b4a766448005ab3056466a6610c5aa0148c87a22064deb39ee9ab3",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/039_pair.png",
+          "sha256": "6325a2736a568b4d179f90a8f0155ea1c9bcffe71c8b1ae70b08b2b84f66b6df",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/039_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/039_pair.png",
+          "sha256": "9e553e4f59c3b10e0d8da770d277d690b94128bff4fb686b4c7ad4a013e97e39",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/039_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/039_pair.png",
+        "sha256": "9e553e4f59c3b10e0d8da770d277d690b94128bff4fb686b4c7ad4a013e97e39",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/039_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "040_pair",
+      "inputs": [
+        {
+          "path": "pairs/040_pair/input.jpeg",
+          "sha256": "2d63ce00b98624294e893bd4226ca7b3975f0bc68fdacf9befd55843eb579649"
+        }
+      ],
+      "source_group": "source-135",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": false,
+      "group_id": "group-3cdfc4b80a7c",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/040_pair/output.png",
+          "sha256": "abe24dbce4bb6f4684e397434321d77c85b2d2dea554ad1915fbc2b6ee73282e",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/040_pair.png",
+          "sha256": null,
+          "availability": "pending_generation",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/040_pair.png",
+          "sha256": null,
+          "availability": "pending_generation",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        }
+      ],
+      "selected_target": null,
+      "target_approval": "excluded_previous_review",
+      "geometry_review": "pending",
+      "eligibility_notes": [
+        "Pair was previously rejected."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "provisional_filename_grouping_requires_review",
+      "include_in_pilot": false,
+      "pilot_exclusion_reason": "Previously rejected pair, absent from the reviewed comparison."
+    },
+    {
+      "id": "041_pair",
+      "inputs": [
+        {
+          "path": "pairs/041_pair/input.jpeg",
+          "sha256": "ec59ff7746d6510cdd216dc381d3da943513e3767477e0927947990f4498d2c0"
+        }
+      ],
+      "source_group": "source-136",
+      "identities_inferred_from_filenames": [
+        "minecraft_scene"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-06c60e55cfe8",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/041_pair/output.png",
+          "sha256": "cb40a1aaa1f4be0803dfbebc7550646010efbe1ec4139576a720c183fa34652a",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/041_pair.png",
+          "sha256": "301feb2a11357a6a359ed9d42ea4eb7165f79cbf736ebd624975e96e81a5266b",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/041_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/041_pair.png",
+          "sha256": "38cf9959ce4aed5faac6d5e3648f9fd1d1492c087232d452b4d9cc130978c541",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/041_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/041_pair/output.png",
+        "sha256": "cb40a1aaa1f4be0803dfbebc7550646010efbe1ec4139576a720c183fa34652a",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "042_pair",
+      "inputs": [
+        {
+          "path": "pairs/042_pair/input.jpeg",
+          "sha256": "4d1b1f2a4d590ee961ab37cb26fb9e8a8051fc91c10cf5beb33f92afa6a8bcf3"
+        }
+      ],
+      "source_group": "source-139",
+      "identities_inferred_from_filenames": [
+        "camavinga"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-5186baf700e4",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/042_pair/output.png",
+          "sha256": "b86acf0633a3348633551679fb7e85dd59e9660fd0b50511f7978b546046c67d",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/042_pair.png",
+          "sha256": "35e22047b00f1600b86f95711489cd89800feafee3328dde5f62903bac4a1770",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/042_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/042_pair.png",
+          "sha256": "aa7fa30637dc688fa7904834ec9975c9575958c8bb420df5a136b29b9f9932da",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/042_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/042_pair/output.png",
+        "sha256": "b86acf0633a3348633551679fb7e85dd59e9660fd0b50511f7978b546046c67d",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "043_pair",
+      "inputs": [
+        {
+          "path": "pairs/043_pair/input.jpeg",
+          "sha256": "4085255f6248f44182a992fd3bd9f5b4f7def90dce0c17b3de9fbf7c8e5d845f"
+        }
+      ],
+      "source_group": "source-141",
+      "identities_inferred_from_filenames": [
+        "ronaldo",
+        "portugal_team"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/043_pair/output.png",
+          "sha256": "6accf20a71143cfa2c1de64a0aa9649edd33f71cf4f85200a035932f072bd04f",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/043_pair.png",
+          "sha256": "875ee780fde483b596fde72e77f845f6b33914a8c42d8cf2737a87ddd6f9af86",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/043_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/043_pair.png",
+          "sha256": "a6ab9d46edf6dac2c307c5ab9ae5589a7182c0f818b16f7d71e6da0128aaa813",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/043_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/043_pair/output.png",
+        "sha256": "6accf20a71143cfa2c1de64a0aa9649edd33f71cf4f85200a035932f072bd04f",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Human identity is not established by filenames; resolve before training or evaluation."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "identity_review_basis": "Manual visual/source-context review; labels used conservatively to prevent cross-split leakage.",
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "044_pair",
+      "inputs": [
+        {
+          "path": "pairs/044_pair/input.avif",
+          "sha256": "b958e96e05a3b297c9d53eed82ea0c9ae4cc4441d763b0adee7df2385997293f"
+        }
+      ],
+      "source_group": "source-143",
+      "identities_inferred_from_filenames": [
+        "football_boots_near_duplicates_unconfirmed"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-6cbac5ccd883",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/044_pair/output.png",
+          "sha256": "01a4ab300c488bc40de06121abf5ea05a07ba1385ae6595aa96c7ec5f6a1f799",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/044_pair.png",
+          "sha256": "06e9ba69678a6f5a8219673e3e9f640ef4f29a9a8c7cee10ad7eb6b3fb452487",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/044_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/044_pair.png",
+          "sha256": "8b2934d1eabf6137664afd593e1bc6c23793a9401e0170f9cdecfd09575c43ba",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/044_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/044_pair/output.png",
+        "sha256": "01a4ab300c488bc40de06121abf5ea05a07ba1385ae6595aa96c7ec5f6a1f799",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "045_pair",
+      "inputs": [
+        {
+          "path": "pairs/045_pair/input_corrected_20261017.png",
+          "sha256": "c22151599e41f3c768b356bd52a1ce58bc2886760fc45cf9947cf5f24b5d80ea"
+        }
+      ],
+      "source_group": "source-143",
+      "identities_inferred_from_filenames": [
+        "football_boots_near_duplicates_unconfirmed"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-6cbac5ccd883",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/045_pair/output.png",
+          "sha256": "951bf12eb323c3f7187de821735c3ff1be29e992ebf927d68fc9e67ade80446a",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "visually_verified_corrected_source",
+          "compatibility_evidence": "The user corrected the original to match this ChatGPT boot drawing; visual comparison confirms the same boot design and view. Earlier mismatch flag was an inferred assumption, not generation evidence."
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/045_pair.png",
+          "sha256": "9cfb15e8f6781379ba10c4a5844733d0c1f13cdc9316d3978659deed289b7728",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/045_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/045_pair.png",
+          "sha256": "9cfb15e8f6781379ba10c4a5844733d0c1f13cdc9316d3978659deed289b7728",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/045_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/045_pair/output.png",
+        "sha256": "951bf12eb323c3f7187de821735c3ff1be29e992ebf927d68fc9e67ade80446a",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "visually_verified_corrected_source",
+        "compatibility_evidence": "The user corrected the original to match this ChatGPT boot drawing; visual comparison confirms the same boot design and view. Earlier mismatch flag was an inferred assumption, not generation evidence."
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Corrected input: historical ChatGPT, Qwen 2.1 v2 and FLUX outputs use the previous input. Qwen reprompt v3 and background v4 use the corrected input; verify result metadata when selecting."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "046_pair",
+      "inputs": [
+        {
+          "path": "pairs/046_pair/input.jpeg",
+          "sha256": "71f18fbd14a1f91c2804fe8f5ee8bf00823e1dbc276791e64907d604bd363afe"
+        }
+      ],
+      "source_group": "source-148",
+      "identities_inferred_from_filenames": [
+        "mbappe"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-dc1a9cf47df8",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/046_pair/output.png",
+          "sha256": "26b37a1d61510efca250acc03b1448640a166e00b7ef0cdd3620aa5a9412a116",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/046_pair.png",
+          "sha256": "0b94aaf5e79245d6597804e6e7912ce345a53addff3d8b0fd10373227e3915d1",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/046_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/046_pair.png",
+          "sha256": "102bd10d2d00c1f4ef4b2bd5f9e1fafb7953c0e3b1d279cc6428607435b47e80",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/046_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/046_pair/output.png",
+        "sha256": "26b37a1d61510efca250acc03b1448640a166e00b7ef0cdd3620aa5a9412a116",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "047_pair",
+      "inputs": [
+        {
+          "path": "pairs/047_pair/input.jpeg",
+          "sha256": "f5667024ef7ca29f28fd1ef7fd2e46514d956088c58072e1e17b900568bc8287"
+        }
+      ],
+      "source_group": "source-150",
+      "identities_inferred_from_filenames": [
+        "ronaldo",
+        "yamal"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/047_pair/output.png",
+          "sha256": "4b8546d54af54e661d2a7e3e3fbee36e928c86bd1b207b5ce2eaf6761aed7a84",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/047_pair.png",
+          "sha256": "839fa301eb3035d53da460dcf83ab46b998417e10d82dbe8edac6fb596cb5803",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/047_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/047_pair.png",
+          "sha256": "747408a1bb5dd552de9552917eec6d098e9fc9ab6323531f4ba6e8d405cabad8",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/047_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/047_pair/output.png",
+        "sha256": "4b8546d54af54e661d2a7e3e3fbee36e928c86bd1b207b5ce2eaf6761aed7a84",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "048_pair",
+      "inputs": [
+        {
+          "path": "pairs/048_pair/input.jpeg",
+          "sha256": "7e58b59be422fceaa863eee1b3f8e3eb9e7c8f22b60732b606175012cfebdda7"
+        }
+      ],
+      "source_group": "source-153",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/048_pair/output.png",
+          "sha256": "adf3b33bfc689d0e218c0a28976b954782e5f534ebdbb88f27481a9da5ed84fc",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/048_pair.png",
+          "sha256": "687a18e332b437642719bdb18671eb99aa0512bfe1b6a3a257c6c15994d9e79b",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/048_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/048_pair.png",
+          "sha256": "0d4ed86765a7595f97c4de1b1366444f2a4ca5887ab2e202fed80c0432357984",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/048_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/048_pair/output.png",
+        "sha256": "adf3b33bfc689d0e218c0a28976b954782e5f534ebdbb88f27481a9da5ed84fc",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "049_pair",
+      "inputs": [
+        {
+          "path": "pairs/049_pair/input.jpeg",
+          "sha256": "97a920a298ef15c39be5e4caed7345a815732b837621dc3419810e8db14819e0"
+        }
+      ],
+      "source_group": "source-157",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/049_pair/output.png",
+          "sha256": "045cc134cb303b17460a5c10d0fdf349f523e567ba6dbfd9b9e5995b467637fc",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/049_pair.png",
+          "sha256": "0d85ffe90a908ba3e59b7f3e55fa1328a888e51c578eab2b33ce6959a5763f94",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/049_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/049_pair.png",
+          "sha256": "45fbc3d05fa453b7810670acf61a953752c7d18145ee287a403290200577b24f",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/049_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "qwen21_background",
+        "path": "benchmark-v2/qwen21_background/outputs/049_pair.png",
+        "sha256": "45fbc3d05fa453b7810670acf61a953752c7d18145ee287a403290200577b24f",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "matched_input_hashes",
+        "generation_metadata": "benchmark-v2/qwen21_background/outputs/049_pair.json"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "050_pair",
+      "inputs": [
+        {
+          "path": "pairs/050_pair/input.jpeg",
+          "sha256": "4acf4c1b9b9ca4f22fadb272b01898b782816a5d4b33caec4ea7b28254c5a64c"
+        }
+      ],
+      "source_group": "source-159",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/050_pair/output.png",
+          "sha256": "37bfea95573b6d455b881818ba469bd9c61906a52be13e0c4f13e8338c20396f",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/050_pair.png",
+          "sha256": "50671d85e3a82434d4ac72d3b89dc5c123313e8f8e93f5f2efad00bba3732b85",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/050_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/050_pair.png",
+          "sha256": "179db89269f7b6f99678c0dadbededbb36016352e008dd9ab6875a7a06ab497d",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/050_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/050_pair/output.png",
+        "sha256": "37bfea95573b6d455b881818ba469bd9c61906a52be13e0c4f13e8338c20396f",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "051_pair",
+      "inputs": [
+        {
+          "path": "pairs/051_pair/input.jpeg",
+          "sha256": "2d8deb47627c1e0562c8cc97aba596c591a80bfdae00b0719b87eade0c05b079"
+        }
+      ],
+      "source_group": "source-165",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/051_pair/output.png",
+          "sha256": "ce8f2fe52ee23708b57e67c141b334c1b1228e8cb7dd3826d61464009bbe46d3",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/051_pair.png",
+          "sha256": "36505a59e615ad264e0b2e7d096d1628d65700e41d6a962214b522fdcda3a5f0",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/051_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/051_pair.png",
+          "sha256": "1849a299d4dbd326e5d21684ee479842045f97d5768397e12138161d19356b2f",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/051_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/051_pair/output.png",
+        "sha256": "ce8f2fe52ee23708b57e67c141b334c1b1228e8cb7dd3826d61464009bbe46d3",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "052_pair",
+      "inputs": [
+        {
+          "path": "pairs/052_pair/input.jpeg",
+          "sha256": "7eb4b1204b82e4dd6c1dae1b03137c0e8f33c2cb029979014bcbf9cd665ac220"
+        }
+      ],
+      "source_group": "source-166",
+      "identities_inferred_from_filenames": [
+        "ronaldo"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-79c7890ff63e",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/052_pair/output.png",
+          "sha256": "ca138aef9625ac751ca04f585d5888e7b8ab6f5bc466fd86a5e38e127a3c09bd",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/052_pair.png",
+          "sha256": "6accaaa977dc2bf6628ed7b5196f105d52e1db1b336b9e0335ac4b381f3ba8c8",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/052_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/052_pair.png",
+          "sha256": "a6515e011b745f116163d6522ac0d3386d4428846a847910d50809a46482b7fc",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/052_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/052_pair/output.png",
+        "sha256": "ca138aef9625ac751ca04f585d5888e7b8ab6f5bc466fd86a5e38e127a3c09bd",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "053_pair",
+      "inputs": [
+        {
+          "path": "pairs/053_pair/input.jpeg",
+          "sha256": "fc7aeb3ec9cb4a75e66a5f5c9c55cd14eaa40472e89453ad90d7a1bd2a7fcffe"
+        }
+      ],
+      "source_group": "source-171",
+      "identities_inferred_from_filenames": [
+        "doue"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-293a705b70cb",
+      "split": "test",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/053_pair/output.png",
+          "sha256": "a413da54485b467e3a4bc5990336f46428bc4fb42f78d2d4868357d3f9cd29b8",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/053_pair.png",
+          "sha256": "134a709ae1bdd80c180a894faa09b2ec6e5c4316eca664baf2494ed8854fc7eb",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/053_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/053_pair.png",
+          "sha256": "c1cbfec0292e84bcedbedf86228a4764f5887a98b9015ac2f01b093903595a4f",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/053_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/053_pair/output.png",
+        "sha256": "a413da54485b467e3a4bc5990336f46428bc4fb42f78d2d4868357d3f9cd29b8",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "054_pair",
+      "inputs": [
+        {
+          "path": "pairs/054_pair/input.jpeg",
+          "sha256": "e81811931c08cf081cbcad9d73a64f151d78dd8ec4bbaf12e84d2a830cecfe6d"
+        }
+      ],
+      "source_group": "source-170",
+      "identities_inferred_from_filenames": [
+        "doue"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-293a705b70cb",
+      "split": "test",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/054_pair/output.png",
+          "sha256": "9c060425f989ffc758d3c7a32200f5bb8ccc99699a38582cf59f596a4bba4182",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/054_pair.png",
+          "sha256": "2cf67b84206d340ac09344b45160c4bc04ed1bee6db7b30979aec3a26b76ccdc",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/054_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/054_pair.png",
+          "sha256": "7c5bf246829761c1f3445569baaf4d9b6bedb8aca8f09eb7ccc3caba503635c8",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/054_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/054_pair/output.png",
+        "sha256": "9c060425f989ffc758d3c7a32200f5bb8ccc99699a38582cf59f596a4bba4182",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "Frozen pilot grouping; named validation/test identities excluded from training, montage joining these identities omitted.",
+      "include_in_pilot": true,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot."
+    },
+    {
+      "id": "055_pair",
+      "inputs": [
+        {
+          "path": "pairs/055_pair/input.jpeg",
+          "sha256": "c415d1d62b2a0d3e82222c6f0209c0f8b1e98d7852cfaa5d4fc661d22156e73b"
+        }
+      ],
+      "source_group": "source-120",
+      "identities_inferred_from_filenames": [
+        "football_boots_near_duplicates_unconfirmed"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-43dc03da03f6",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/055_pair/output.png",
+          "sha256": "294f5c5958f54af4de2ce0a66adf7791861caa8cce70471d99126aeec5c40a0d",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/055_pair.png",
+          "sha256": "7464dcec3b971fbea02f3e6e8a6f02bd33754f40fe261957e91a7b7f338ba33c",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/055_pair.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/055_pair.png",
+          "sha256": "7464dcec3b971fbea02f3e6e8a6f02bd33754f40fe261957e91a7b7f338ba33c",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/055_pair.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/055_pair/output.png",
+        "sha256": "294f5c5958f54af4de2ce0a66adf7791861caa8cce70471d99126aeec5c40a0d",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "provisional_filename_grouping_requires_review",
+      "include_in_pilot": false,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot.",
+      "pilot_exclusion_reason": "Approved target substantially reframes and changes the shoe presentation; retained for later product-specific evaluation."
+    },
+    {
+      "id": "056_composite",
+      "inputs": [
+        {
+          "path": "pairs/056_composite/input_01.jpeg",
+          "sha256": "79d51055f2fc1e46bb8f5dd6ece5feeba875ab94268602c916f97774ac659959"
+        },
+        {
+          "path": "pairs/056_composite/input_02.jpeg",
+          "sha256": "f1ea2668b50628ee3daa9cbb8eb65cce558db8df7bd6e0fb87da7c2518c8afb9"
+        }
+      ],
+      "source_group": "source-12-13",
+      "identities_inferred_from_filenames": [
+        "ronaldo",
+        "raphinha"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-c53b2ed4cddb",
+      "split": "validation",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/056_composite/output.png",
+          "sha256": "5c7090b7aaab9a671c477980f3d616f8a5a3903168030e31ce3ae4e808f231d0",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/056_composite.png",
+          "sha256": "c40b459b82080568ef4669048b6c95c3ec15200368eb6cd8fc60da28831129b7",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/056_composite.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/056_composite.png",
+          "sha256": "c40b459b82080568ef4669048b6c95c3ec15200368eb6cd8fc60da28831129b7",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/056_composite.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/056_composite/output.png",
+        "sha256": "5c7090b7aaab9a671c477980f3d616f8a5a3903168030e31ce3ae4e808f231d0",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Multiple input images: excluded from the single-condition pilot."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "provisional_filename_grouping_requires_review",
+      "include_in_pilot": false,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot.",
+      "pilot_exclusion_reason": "Multi-input composite; the first paired trainer uses one source image."
+    },
+    {
+      "id": "057_composite",
+      "inputs": [
+        {
+          "path": "pairs/057_composite/input_01.jpeg",
+          "sha256": "4a118e96642b26e599e0333a031fab9cede4950f2cfd0460f28fbc11358eee8d"
+        },
+        {
+          "path": "pairs/057_composite/input_02.jpeg",
+          "sha256": "6de66587ac017a7c58801522061dd84e3e730809f36114e9703d4b5f6deb2eb7"
+        }
+      ],
+      "source_group": "source-24-23",
+      "identities_inferred_from_filenames": [
+        "ronaldo",
+        "mbappe"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-cf3a55dbce60",
+      "split": "train",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/057_composite/output.png",
+          "sha256": "ee0889fd879f85e13f0772372b487823fae78c46b581ee0f8a74f09d1706a64b",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/057_composite.png",
+          "sha256": "60e7daea03b6006e88dc2f2604ff71e801840fc407d24f9dd3b5c5f79663c54d",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/057_composite.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/057_composite.png",
+          "sha256": "60e7daea03b6006e88dc2f2604ff71e801840fc407d24f9dd3b5c5f79663c54d",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/057_composite.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/057_composite/output.png",
+        "sha256": "ee0889fd879f85e13f0772372b487823fae78c46b581ee0f8a74f09d1706a64b",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Multiple input images: excluded from the single-condition pilot."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "provisional_filename_grouping_requires_review",
+      "include_in_pilot": false,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot.",
+      "pilot_exclusion_reason": "Multi-input composite; the first paired trainer uses one source image."
+    },
+    {
+      "id": "058_composite",
+      "inputs": [
+        {
+          "path": "pairs/058_composite/input_01.jpeg",
+          "sha256": "aaa28e47f058450aa4fc3dd783aee14bc9c3d2cde4e475967ad2beb573fa196c"
+        },
+        {
+          "path": "pairs/058_composite/input_02.jpeg",
+          "sha256": "b31b5464c49e8dfd22490481e5d76d2eac3dafed9a79b72016a22ba0ea31b56f"
+        }
+      ],
+      "source_group": "source-27-26",
+      "identities_inferred_from_filenames": [
+        "yamal",
+        "raphinha"
+      ],
+      "grouping_confirmed": true,
+      "group_id": "group-8181cb471718",
+      "split": "validation",
+      "target_candidates": [
+        {
+          "variant": "chatgpt",
+          "path": "pairs/058_composite/output.png",
+          "sha256": "aebb5aab45557f6549160947860c2adf1bca4884db5adb0ff2c6b72ee189a16c",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "verify_metadata"
+        },
+        {
+          "variant": "qwen21_reprompt",
+          "path": "benchmark-v2/qwen21_reprompt/outputs/058_composite.png",
+          "sha256": "52c3cf9f8ce941ff2a718d03b4d9d9e95fe1ee6a8d6d885b4f85d63a2956ceba",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_reprompt/outputs/058_composite.json"
+        },
+        {
+          "variant": "qwen21_background",
+          "path": "benchmark-v2/qwen21_background/outputs/058_composite.png",
+          "sha256": "52c3cf9f8ce941ff2a718d03b4d9d9e95fe1ee6a8d6d885b4f85d63a2956ceba",
+          "availability": "available",
+          "approval": "not_selected_for_training",
+          "source_compatibility": "matched_input_hashes",
+          "generation_metadata": "benchmark-v2/qwen21_background/outputs/058_composite.json"
+        }
+      ],
+      "selected_target": {
+        "variant": "chatgpt",
+        "path": "pairs/058_composite/output.png",
+        "sha256": "aebb5aab45557f6549160947860c2adf1bca4884db5adb0ff2c6b72ee189a16c",
+        "availability": "available",
+        "approval": "not_selected_for_training",
+        "source_compatibility": "verify_metadata"
+      },
+      "target_approval": "approved",
+      "geometry_review": "approved",
+      "eligibility_notes": [
+        "Multiple input images: excluded from the single-condition pilot."
+      ],
+      "instruction": "Create a pencil colouring page.",
+      "split_status": "provisional_filename_grouping_requires_review",
+      "include_in_pilot": false,
+      "target_selection_basis": "Explicit user selection in this chat: ChatGPT by default, background v4 for the listed exceptions.",
+      "geometry_normalisation": "white_letterbox_to_source_aspect",
+      "geometry_review_basis": "User-approved target; source/target aspect ratios audited. Full images are fitted without stretching or cropping; strong reframing cases excluded from this pilot.",
+      "pilot_exclusion_reason": "Multi-input composite; the first paired trainer uses one source image."
+    }
+  ],
+  "training_target_manifest_sha256": "e2bb357bffb870bee423343042f944725771d16ca17bf99f6ba3bf421b818818",
+  "geometry_policy": "Preserve complete source and target images; white letterbox both to a common source-aspect canvas, with no aspect-ratio stretch."
+}

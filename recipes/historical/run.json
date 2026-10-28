@@ -1,0 +1,1005 @@
+{
+  "run_id": "qwen-edit-2511-baseline-v1",
+  "model": {
+    "id": "Qwen/Qwen-Image-Edit-2511",
+    "revision": "6f3ccc0b56e431dc6a0c2b2039706d7d26f22cb9"
+  },
+  "additional_loras": [],
+  "dtype": "bfloat16",
+  "num_inference_steps": 40,
+  "true_cfg_scale": 4.0,
+  "guidance_scale": 1.0,
+  "negative_prompt": " ",
+  "target_pixels": 1048576,
+  "input_preprocessing": "EXIF orientation and RGB conversion only. No cropping or reference-based conditioning.",
+  "tasks": [
+    {
+      "id": "001_kitten-bedspread",
+      "inputs": [
+        "pairs/001_kitten-bedspread/input.jpeg"
+      ],
+      "reference": "pairs/001_kitten-bedspread/output.png",
+      "kind": "single_input",
+      "source_group": "source-178",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H083",
+        "H084"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "002_cat-la-streetwear",
+      "inputs": [
+        "pairs/002_cat-la-streetwear/input.jpeg"
+      ],
+      "reference": "pairs/002_cat-la-streetwear/output.png",
+      "kind": "single_input",
+      "source_group": "source-183",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H085",
+        "H086"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "003_footballer-number-7",
+      "inputs": [
+        "pairs/003_footballer-number-7/input.jpeg"
+      ],
+      "reference": "pairs/003_footballer-number-7/output.png",
+      "kind": "single_input",
+      "source_group": "source-185",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H087"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "004_pair",
+      "inputs": [
+        "pairs/004_pair/input.jpeg"
+      ],
+      "reference": "pairs/004_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-0",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "005_pair",
+      "inputs": [
+        "pairs/005_pair/input.jpeg"
+      ],
+      "reference": "pairs/005_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-1",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "006_pair",
+      "inputs": [
+        "pairs/006_pair/input.jpeg"
+      ],
+      "reference": "pairs/006_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-4",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "007_pair",
+      "inputs": [
+        "pairs/007_pair/input.jpeg"
+      ],
+      "reference": "pairs/007_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-6",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "008_pair",
+      "inputs": [
+        "pairs/008_pair/input.jpeg"
+      ],
+      "reference": "pairs/008_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-10",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "009_pair",
+      "inputs": [
+        "pairs/009_pair/input.jpeg"
+      ],
+      "reference": "pairs/009_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-20",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "010_pair",
+      "inputs": [
+        "pairs/010_pair/input.jpeg"
+      ],
+      "reference": "pairs/010_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-30",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "011_pair",
+      "inputs": [
+        "pairs/011_pair/input.jpeg"
+      ],
+      "reference": "pairs/011_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-26",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "012_pair",
+      "inputs": [
+        "pairs/012_pair/input.jpeg"
+      ],
+      "reference": "pairs/012_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-32",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "013_pair",
+      "inputs": [
+        "pairs/013_pair/input.jpeg"
+      ],
+      "reference": "pairs/013_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-36",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "014_pair",
+      "inputs": [
+        "pairs/014_pair/input.jpeg"
+      ],
+      "reference": "pairs/014_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-37",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "015_pair",
+      "inputs": [
+        "pairs/015_pair/input.jpeg"
+      ],
+      "reference": "pairs/015_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-41",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "016_pair",
+      "inputs": [
+        "pairs/016_pair/input.jpeg"
+      ],
+      "reference": "pairs/016_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-42",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "017_pair",
+      "inputs": [
+        "pairs/017_pair/input.jpeg"
+      ],
+      "reference": "pairs/017_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-52",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "018_pair",
+      "inputs": [
+        "pairs/018_pair/input.jpeg"
+      ],
+      "reference": "pairs/018_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-53",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "019_pair",
+      "inputs": [
+        "pairs/019_pair/input.jpeg"
+      ],
+      "reference": "pairs/019_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-56",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "020_pair",
+      "inputs": [
+        "pairs/020_pair/input.jpeg"
+      ],
+      "reference": "pairs/020_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-57",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "021_pair",
+      "inputs": [
+        "pairs/021_pair/input.jpeg"
+      ],
+      "reference": "pairs/021_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-61",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "022_pair",
+      "inputs": [
+        "pairs/022_pair/input.jpeg"
+      ],
+      "reference": "pairs/022_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-62",
+      "prompt": "Redraw the supplied reference directly, preserving the subject, pose, framing and important details. Use a plain white paper background. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "the bg should remain white",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "023_pair",
+      "inputs": [
+        "pairs/023_pair/input.jpeg"
+      ],
+      "reference": "pairs/023_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-68",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "024_pair",
+      "inputs": [
+        "pairs/024_pair/input.jpeg"
+      ],
+      "reference": "pairs/024_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-72",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "025_pair",
+      "inputs": [
+        "pairs/025_pair/input.jpeg"
+      ],
+      "reference": "pairs/025_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-70",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "027_pair",
+      "inputs": [
+        "pairs/027_pair/input.jpeg"
+      ],
+      "reference": "pairs/027_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-77",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "028_pair",
+      "inputs": [
+        "pairs/028_pair/input.jpeg"
+      ],
+      "reference": "pairs/028_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-78",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "029_pair",
+      "inputs": [
+        "pairs/029_pair/input.jpeg"
+      ],
+      "reference": "pairs/029_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-82",
+      "prompt": "Complete the cropped Bugatti so that the entire car is visible, and redraw the scene in the established realistic graphite pencil colouring-page style. Preserve the person and other relevant content from the supplied reference. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline.",
+      "review_notes": "the car was explicitly asked to be fully drawn; in recult cr7 is missing on the car unfortuntaley.",
+      "seed": 42,
+      "prompt_evidence": [
+        "H038"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "030_pair",
+      "inputs": [
+        "pairs/030_pair/input.jpeg"
+      ],
+      "reference": "pairs/030_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-88",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H039"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "031_pair",
+      "inputs": [
+        "pairs/031_pair/input.jpeg"
+      ],
+      "reference": "pairs/031_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-91",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H040"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "032_pair",
+      "inputs": [
+        "pairs/032_pair/input.jpeg"
+      ],
+      "reference": "pairs/032_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-94",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "033_pair",
+      "inputs": [
+        "pairs/033_pair/input.jpeg"
+      ],
+      "reference": "pairs/033_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-95",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "034_pair",
+      "inputs": [
+        "pairs/034_pair/input.jpeg"
+      ],
+      "reference": "pairs/034_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-115",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "035_pair",
+      "inputs": [
+        "pairs/035_pair/input.jpeg"
+      ],
+      "reference": "pairs/035_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-116",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "036_pair",
+      "inputs": [
+        "pairs/036_pair/input.jpeg"
+      ],
+      "reference": "pairs/036_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-123",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "037_pair",
+      "inputs": [
+        "pairs/037_pair/input.jpeg"
+      ],
+      "reference": "pairs/037_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-125",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "038_pair",
+      "inputs": [
+        "pairs/038_pair/input.jpeg"
+      ],
+      "reference": "pairs/038_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-130",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "039_pair",
+      "inputs": [
+        "pairs/039_pair/input.jpeg"
+      ],
+      "reference": "pairs/039_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-133",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it. Keep the shading slightly lighter than a fully shaded graphite portrait.",
+      "review_notes": "result shold have just a bit less intense",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "041_pair",
+      "inputs": [
+        "pairs/041_pair/input.jpeg"
+      ],
+      "reference": "pairs/041_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-136",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H062",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "042_pair",
+      "inputs": [
+        "pairs/042_pair/input.jpeg"
+      ],
+      "reference": "pairs/042_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-139",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H064"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "043_pair",
+      "inputs": [
+        "pairs/043_pair/input.jpeg"
+      ],
+      "reference": "pairs/043_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-141",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H065"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "044_pair",
+      "inputs": [
+        "pairs/044_pair/input.avif"
+      ],
+      "reference": "pairs/044_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-143",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H066"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "045_pair",
+      "inputs": [
+        "pairs/045_pair/input.avif"
+      ],
+      "reference": "pairs/045_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-143",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H067"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "046_pair",
+      "inputs": [
+        "pairs/046_pair/input.jpeg"
+      ],
+      "reference": "pairs/046_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-148",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H070"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "047_pair",
+      "inputs": [
+        "pairs/047_pair/input.jpeg"
+      ],
+      "reference": "pairs/047_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-150",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H071"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "048_pair",
+      "inputs": [
+        "pairs/048_pair/input.jpeg"
+      ],
+      "reference": "pairs/048_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-153",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H072"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "049_pair",
+      "inputs": [
+        "pairs/049_pair/input.jpeg"
+      ],
+      "reference": "pairs/049_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-157",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H074"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "050_pair",
+      "inputs": [
+        "pairs/050_pair/input.jpeg"
+      ],
+      "reference": "pairs/050_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-159",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H075"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "051_pair",
+      "inputs": [
+        "pairs/051_pair/input.jpeg"
+      ],
+      "reference": "pairs/051_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-165",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H076"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "052_pair",
+      "inputs": [
+        "pairs/052_pair/input.jpeg"
+      ],
+      "reference": "pairs/052_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-166",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H077"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "053_pair",
+      "inputs": [
+        "pairs/053_pair/input.jpeg"
+      ],
+      "reference": "pairs/053_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-171",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H080"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "054_pair",
+      "inputs": [
+        "pairs/054_pair/input.jpeg"
+      ],
+      "reference": "pairs/054_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-170",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H080"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "055_pair",
+      "inputs": [
+        "pairs/055_pair/input.jpeg"
+      ],
+      "reference": "pairs/055_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-120",
+      "prompt": "Redraw the supplied reference image directly. Preserve its composition, poses, framing, facial expressions, clothing, accessories, visible logos and important details. Keep the existing scene and background layout, rendering them with light, restrained pencil detail. Do not create a different scene. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline. Preserve the reference framing and the visible extent of each subject. Do not extend a cropped portrait into a full-body image unless the task explicitly requests it.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H060",
+        "H061",
+        "H063"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "056_composite",
+      "inputs": [
+        "pairs/056_composite/input_01.jpeg",
+        "pairs/056_composite/input_02.jpeg"
+      ],
+      "reference": "pairs/056_composite/output.png",
+      "kind": "multi_input",
+      "source_group": "source-12-13",
+      "prompt": "Combine the subjects from the supplied reference images into one coherent illustration. Preserve each subject's recognisable appearance, expression, pose, clothing and distinctive details. Arrange them together on one page without duplicating or omitting subjects. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H006"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "057_composite",
+      "inputs": [
+        "pairs/057_composite/input_01.jpeg",
+        "pairs/057_composite/input_02.jpeg"
+      ],
+      "reference": "pairs/057_composite/output.png",
+      "kind": "multi_input",
+      "source_group": "source-24-23",
+      "prompt": "Combine the subjects from the supplied reference images into one coherent illustration. Preserve each subject's recognisable appearance, expression, pose, clothing and distinctive details. Arrange them together on one page without duplicating or omitting subjects. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H008"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    },
+    {
+      "id": "058_composite",
+      "inputs": [
+        "pairs/058_composite/input_01.jpeg",
+        "pairs/058_composite/input_02.jpeg"
+      ],
+      "reference": "pairs/058_composite/output.png",
+      "kind": "multi_input",
+      "source_group": "source-27-26",
+      "prompt": "Combine the subjects from the supplied reference images into one coherent illustration. Preserve each subject's recognisable appearance, expression, pose, clothing and distinctive details. Arrange them together on one page without duplicating or omitting subjects. Use a realistic black-and-white graphite pencil colouring-page style. Preserve strong facial likeness and natural proportions. Keep recognisable pencil linework, fine graphite detail and restrained soft shading. Reduce excessive pencil texture and mid-tone shading so that children have clear areas to colour, while retaining enough tonal variation to describe form. The result should look like a realistic pencil drawing, not a photograph or a flat cartoon outline.",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_evidence": [
+        "H009"
+      ],
+      "prompt_basis": "Agent-selected reconstruction from the supplied chat PDF and dataset review; user delegated final selection."
+    }
+  ],
+  "prompt_selection": {
+    "status": "confirmed_by_user_delegation",
+    "basis": "User accepted the shared instructions and asked the agent to choose the rest.",
+    "background": "Preserve reference layout by default; white background override for 022_pair only.",
+    "full_body": "Only extend a crop when explicitly requested.",
+    "text_only_creative_tasks": "Excluded from this image-edit baseline.",
+    "additional_loras": []
+  },
+  "software": {
+    "diffusers": "0.37.0",
+    "transformers": "4.57.3",
+    "torch": "2.8.0+cu128",
+    "container": {
+      "image": "pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime",
+      "digest": "sha256:417bd75df6365104c283ea4c1651fb3530d9eb5a4c2fafa51943cff2a94e6385"
+    },
+    "required_model_config": {
+      "zero_cond_t": true
+    }
+  }
+}

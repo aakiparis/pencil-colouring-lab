@@ -1,0 +1,16 @@
+{
+  "region": "uk-south2",
+  "endpoint": "https://storage.uk-south2.nebius.cloud",
+  "project_id": "REPLACE_PROJECT_ID",
+  "bucket": "REPLACE_BUCKET_NAME",
+  "filesystem_id": "REPLACE_FILESYSTEM_ID",
+  "subnet_id": "REPLACE_SUBNET_ID",
+  "storage_secret_id": "REPLACE_MYSTERYBOX_SECRET_ID",
+  "hf_secret_id": null,
+  "cli": "nebius",
+  "platform": "gpu-rtx6000-a",
+  "presets": {
+    "1": "1gpu-24vcpu-218gb",
+    "8": "8gpu-192vcpu-1744gb"
+  }
+}

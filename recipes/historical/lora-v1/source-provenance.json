@@ -1,0 +1,35 @@
+{
+  "diffusers_commit": "b800f828f3951c4d206e154411bcbfa693cd322e",
+  "model_revision": "d26bb61231c349cf6b7896fa83353113880e1ba3",
+  "model_licence": "qwen-research",
+  "upstream_files": {
+    "vendor/train_dreambooth_lora_qwenimage21_img2img.py": {
+      "sha256": "1c5d3e4658ba65e1ff3bfc2e4787ca3e7297167b9beeb2e87ca70d769549acd0",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/b800f828f3951c4d206e154411bcbfa693cd322e/examples/dreambooth/train_dreambooth_lora_qwenimage21_img2img.py"
+    },
+    "vendor/README_qwenimage21.md": {
+      "sha256": "c37d15068827521558e6f832807fb6e5aa6d27c07c784b2518c5b91237760684",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/b800f828f3951c4d206e154411bcbfa693cd322e/examples/dreambooth/README_qwenimage21.md"
+    },
+    "vendor/requirements_flux.txt": {
+      "sha256": "9be142a65cc2c7fefbbdd1a2ed0d59a649fb0cad616fea8ce43b3496f61c863c",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/b800f828f3951c4d206e154411bcbfa693cd322e/examples/dreambooth/requirements_flux.txt"
+    },
+    "vendor/train_dreambooth_lora_qwenimage21.py": {
+      "sha256": "26e5bdcc58fbbee6c9c0ba107b6efda5a7a7a9e6aff700089cf2b8b5652662e7",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/b800f828f3951c4d206e154411bcbfa693cd322e/examples/dreambooth/train_dreambooth_lora_qwenimage21.py"
+    }
+  },
+  "licence_sha256": "8dc973f024ff95966bea25866efa443fd16776dcb1001e681e3d467ea572b28d",
+  "local_training_variant": {
+    "path": "trainer_ddp.py",
+    "sha256": "2fb146ceccc0b4d86a5a002c2e8c7d15cc0637fac50d58c755d1bf0bd7d9e159",
+    "patch": "trainer-ddp.patch",
+    "changes": [
+      "All-rank checkpoint saves and rank-zero-only frozen weight handling/pruning",
+      "Deterministic sampler epoch and within-epoch resume offset",
+      "Twenty-minute distributed timeout and symmetric validation barriers",
+      "Native live-transformer validation PNGs and metadata, full-frame VAE decoding"
+    ]
+  }
+}

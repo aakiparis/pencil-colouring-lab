@@ -1,0 +1,87 @@
+{
+  "run_id": "pencil-spiderman-test-20261018",
+  "prefix": "inference-tests/spiderman-20261018",
+  "model": {
+    "id": "Qwen/Qwen-Image-2.1",
+    "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+  },
+  "pipeline": "qwen21",
+  "additional_loras": [
+    {
+      "training_run_key": "85946645ba52ea3e63711ee704cc59f1f05ebed9726acec1c124a7b562314fa3",
+      "checkpoint": 200,
+      "scale": 1.0,
+      "sha256": "fa532f149e5ad5940389bbb9ec2adbcad81501fa419378134d33e74549069192",
+      "object_key": "lora-v1/pilot/85946645ba52ea3e/pilot/pytorch_lora_weights.safetensors"
+    }
+  ],
+  "dtype": "bfloat16",
+  "num_inference_steps": 40,
+  "target_pixels": 1048576,
+  "composite_size": [
+    1360,
+    768
+  ],
+  "tasks": [
+    {
+      "id": "spiderman-poster-01",
+      "inputs": [
+        "inference-tests/spiderman-20261018/spiderman-poster-01/input.jpeg"
+      ],
+      "reference": null,
+      "kind": "single_input",
+      "source_group": "new-user-upload-spiderman-poster-01",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "new_unseen_user_sample"
+    },
+    {
+      "id": "spiderman-poster-02",
+      "inputs": [
+        "inference-tests/spiderman-20261018/spiderman-poster-02/input.jpeg"
+      ],
+      "reference": null,
+      "kind": "single_input",
+      "source_group": "new-user-upload-spiderman-poster-02",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "new_unseen_user_sample"
+    }
+  ],
+  "smoke_ids": [],
+  "prompt_feedback_sha256": "332860f5f618c962711987de39c57e180cdc2c0dea8a26cfaa0537b895a2a10f",
+  "input_preprocessing": "EXIF orientation and RGB conversion; no external crop or enhancement.",
+  "software": {
+    "diffusers_commit": "b800f828f3951c4d206e154411bcbfa693cd322e",
+    "transformers": "5.20.1",
+    "accelerate": "1.15.0",
+    "huggingface_hub": "2.2.0",
+    "boto3": "1.43.114",
+    "Pillow": "13.0.0"
+  },
+  "comparison_note": "Only the scene-background instructions differ from the accepted reprompt run. Model revision, VAE tiling disabled, input files, seed, steps and resolution policy are unchanged. Product and composite prompts retain their existing background rules.",
+  "true_cfg_scale": 1.0,
+  "reuse_ready_model": true,
+  "vae_tiling": false,
+  "input_sha256": {
+    "inference-tests/spiderman-20261018/spiderman-poster-01/input.jpeg": "ef5ceaa23d64164c82ea772774d5f1ea86f02e20f5056d0ce7a4bd8a8f5084df",
+    "inference-tests/spiderman-20261018/spiderman-poster-02/input.jpeg": "6d1ae33d3c7e25b38329c9ec9f8797ce0d51eb44307d2d77e87acc54510139ec"
+  },
+  "input_objects": {
+    "inference-tests/spiderman-20261018/spiderman-poster-01/input.jpeg": "inference-tests/spiderman-20261018/inputs/spiderman-poster-01.jpeg",
+    "inference-tests/spiderman-20261018/spiderman-poster-02/input.jpeg": "inference-tests/spiderman-20261018/inputs/spiderman-poster-02.jpeg"
+  },
+  "prompt_policy_version": "lora200-with-frozen-background-v4",
+  "vae_slicing": false,
+  "worker_semantics": "New user-supplied photographs, independent inference with the accepted detailed background v4 prompt and trained adapter; no dataset or training modifications.",
+  "worker_sha256": "3a630f637da35c466b091d4d0d6c57833f68a57457da99e2d8d4c749f4a05b57",
+  "bootstrap_sha256": "09cca07412a4036aee1b31263eab59e88abec1d5c00f9e58504d8f3dc41fadec",
+  "comparison_basis": "Exact per-image prompts, inputs, model revision, seed and sampling settings from the completed background v4 baseline; adds the trained update-200 LoRA at strength 1. Raw output, without greyscale conversion.",
+  "prompt_source_run_sha256": "e7d77febea51065bad194f353c285525fe0b4a71328ccbf940dd21ef17b03749"
+}

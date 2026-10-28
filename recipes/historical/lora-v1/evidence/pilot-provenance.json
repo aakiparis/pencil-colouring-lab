@@ -1,0 +1,104 @@
+{
+  "run_key": "85946645ba52ea3e63711ee704cc59f1f05ebed9726acec1c124a7b562314fa3",
+  "mode": "pilot",
+  "model": {
+    "id": "Qwen/Qwen-Image-2.1",
+    "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+  },
+  "dataset_manifest_sha256": "d123747350dcc8742d4aa565e416fdf79d13bcae52b63a53f826c6296833b2a6",
+  "package_sha256": "ac74d5d62d887bd0a91ea69deef901abc338ecaa6cd4ab73a64972719031e26e",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "accelerate": "1.15.0",
+    "diffusers": "0.41.0.dev0",
+    "transformers": "5.20.1",
+    "peft": "0.21.2",
+    "datasets": "5.1.0"
+  },
+  "configuration": {
+    "run_id": "pencil-lora-v1-pilot",
+    "prefix": "lora-v1/pilot",
+    "model": {
+      "id": "Qwen/Qwen-Image-2.1",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+    },
+    "diffusers_commit": "b800f828f3951c4d206e154411bcbfa693cd322e",
+    "instruction": "Create a pencil colouring page.",
+    "training": {
+      "resolution": 1024,
+      "rank": 8,
+      "lora_alpha": 8,
+      "learning_rate": 5e-05,
+      "train_batch_size": 1,
+      "gradient_accumulation_steps": 1,
+      "max_train_steps": 200,
+      "checkpointing_steps": 25,
+      "seed": 42
+    },
+    "validation": {
+      "seeds": [
+        42,
+        123
+      ],
+      "adapter_scales": [
+        0.5,
+        0.75,
+        1.0
+      ],
+      "num_inference_steps": 40,
+      "true_cfg_scale": 1.0,
+      "vae_tiling": false,
+      "vae_slicing": false
+    },
+    "infrastructure": {
+      "region": "uk-south2",
+      "platform": "gpu-rtx6000-a",
+      "preset": "8gpu-192vcpu-1744gb",
+      "preemptible": true,
+      "timeout": "6h",
+      "restart_policy": "never",
+      "minimum_output_reserve_bytes": 8589934592,
+      "gpu_count": 8
+    },
+    "state": "authorised_waiting_for_frozen_dataset_and_calibration",
+    "calibration_updates": 20,
+    "training_strategy": {
+      "type": "DDP",
+      "num_processes": 8,
+      "per_device_batch_size": 1,
+      "gradient_accumulation_steps": 1,
+      "effective_batch_size": 8,
+      "description": "One shared adapter trained across eight replicas, not independent shards."
+    }
+  },
+  "filesystem_preflight": [
+    {
+      "stage": "package_download",
+      "filesystem": "/cache",
+      "capacity_bytes": 214748364800,
+      "used_bytes": 133230817280,
+      "free_bytes": 81517547520,
+      "required_free_bytes": 9006058523
+    },
+    {
+      "stage": "package_extraction",
+      "filesystem": "/cache",
+      "capacity_bytes": 214748364800,
+      "used_bytes": 133230817280,
+      "free_bytes": 81517547520,
+      "required_free_bytes": 9006647962
+    },
+    {
+      "stage": "model_download_and_output_reserve",
+      "filesystem": "/cache",
+      "capacity_bytes": 214748364800,
+      "used_bytes": 133230817280,
+      "free_bytes": 81517547520,
+      "required_free_bytes": 8589934592
+    }
+  ],
+  "missing_model_download_bytes_at_preflight": 0,
+  "world_size": 8,
+  "effective_batch_size": 8,
+  "strategy": "One adapter with eight DDP replicas"
+}

@@ -1,0 +1,961 @@
+{
+  "run_id": "pencil-benchmark-v2-qwen21-lora200-detailed",
+  "prefix": "benchmark-v2/qwen21_lora200_detailed",
+  "model": {
+    "id": "Qwen/Qwen-Image-2.1",
+    "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+  },
+  "pipeline": "qwen21",
+  "additional_loras": [
+    {
+      "training_run_key": "85946645ba52ea3e63711ee704cc59f1f05ebed9726acec1c124a7b562314fa3",
+      "checkpoint": 200,
+      "scale": 1.0,
+      "sha256": "fa532f149e5ad5940389bbb9ec2adbcad81501fa419378134d33e74549069192",
+      "object_key": "lora-v1/pilot/85946645ba52ea3e/pilot/pytorch_lora_weights.safetensors"
+    }
+  ],
+  "dtype": "bfloat16",
+  "num_inference_steps": 40,
+  "target_pixels": 1048576,
+  "composite_size": [
+    1360,
+    768
+  ],
+  "tasks": [
+    {
+      "id": "001_kitten-bedspread",
+      "inputs": [
+        "pairs/001_kitten-bedspread/input.jpeg"
+      ],
+      "reference": "pairs/001_kitten-bedspread/output.png",
+      "kind": "single_input",
+      "source_group": "source-178",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "002_cat-la-streetwear",
+      "inputs": [
+        "pairs/002_cat-la-streetwear/input.jpeg"
+      ],
+      "reference": "pairs/002_cat-la-streetwear/output.png",
+      "kind": "single_input",
+      "source_group": "source-183",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "003_footballer-number-7",
+      "inputs": [
+        "pairs/003_footballer-number-7/input.jpeg"
+      ],
+      "reference": "pairs/003_footballer-number-7/output.png",
+      "kind": "single_input",
+      "source_group": "source-185",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "004_pair",
+      "inputs": [
+        "pairs/004_pair/input.jpeg"
+      ],
+      "reference": "pairs/004_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-0",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "validation"
+    },
+    {
+      "id": "005_pair",
+      "inputs": [
+        "pairs/005_pair/input.jpeg"
+      ],
+      "reference": "pairs/005_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-1",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "excluded_from_pilot"
+    },
+    {
+      "id": "006_pair",
+      "inputs": [
+        "pairs/006_pair/input.jpeg"
+      ],
+      "reference": "pairs/006_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-4",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "validation"
+    },
+    {
+      "id": "007_pair",
+      "inputs": [
+        "pairs/007_pair/input.jpeg"
+      ],
+      "reference": "pairs/007_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-6",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "008_pair",
+      "inputs": [
+        "pairs/008_pair/input.jpeg"
+      ],
+      "reference": "pairs/008_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-10",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "validation"
+    },
+    {
+      "id": "009_pair",
+      "inputs": [
+        "pairs/009_pair/input.jpeg"
+      ],
+      "reference": "pairs/009_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-20",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "010_pair",
+      "inputs": [
+        "pairs/010_pair/input.jpeg"
+      ],
+      "reference": "pairs/010_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-30",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "011_pair",
+      "inputs": [
+        "pairs/011_pair/input.jpeg"
+      ],
+      "reference": "pairs/011_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-26",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "012_pair",
+      "inputs": [
+        "pairs/012_pair/input.jpeg"
+      ],
+      "reference": "pairs/012_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-32",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "013_pair",
+      "inputs": [
+        "pairs/013_pair/input.jpeg"
+      ],
+      "reference": "pairs/013_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-36",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "014_pair",
+      "inputs": [
+        "pairs/014_pair/input.jpeg"
+      ],
+      "reference": "pairs/014_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-37",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "validation"
+    },
+    {
+      "id": "015_pair",
+      "inputs": [
+        "pairs/015_pair/input.jpeg"
+      ],
+      "reference": "pairs/015_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-41",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "016_pair",
+      "inputs": [
+        "pairs/016_pair/input.jpeg"
+      ],
+      "reference": "pairs/016_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-42",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "017_pair",
+      "inputs": [
+        "pairs/017_pair/input.jpeg"
+      ],
+      "reference": "pairs/017_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-52",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "018_pair",
+      "inputs": [
+        "pairs/018_pair/input.jpeg"
+      ],
+      "reference": "pairs/018_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-53",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "019_pair",
+      "inputs": [
+        "pairs/019_pair/input.jpeg"
+      ],
+      "reference": "pairs/019_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-56",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "020_pair",
+      "inputs": [
+        "pairs/020_pair/input.jpeg"
+      ],
+      "reference": "pairs/020_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-57",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "021_pair",
+      "inputs": [
+        "pairs/021_pair/input.jpeg"
+      ],
+      "reference": "pairs/021_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-61",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "test"
+    },
+    {
+      "id": "022_pair",
+      "inputs": [
+        "pairs/022_pair/input.jpeg"
+      ],
+      "reference": "pairs/022_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-62",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "the bg should remain white",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "023_pair",
+      "inputs": [
+        "pairs/023_pair/input.jpeg"
+      ],
+      "reference": "pairs/023_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-68",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "024_pair",
+      "inputs": [
+        "pairs/024_pair/input.jpeg"
+      ],
+      "reference": "pairs/024_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-72",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "025_pair",
+      "inputs": [
+        "pairs/025_pair/input.jpeg"
+      ],
+      "reference": "pairs/025_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-70",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "027_pair",
+      "inputs": [
+        "pairs/027_pair/input.jpeg"
+      ],
+      "reference": "pairs/027_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-77",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "028_pair",
+      "inputs": [
+        "pairs/028_pair/input.jpeg"
+      ],
+      "reference": "pairs/028_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-78",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "029_pair",
+      "inputs": [
+        "pairs/029_pair/input.jpeg"
+      ],
+      "reference": "pairs/029_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-82",
+      "prompt": "Draw the whole Bugatti from the photograph, completing only cropped parts consistently with the visible design and perspective. Retain the person with the car with the same appearance and pose. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "the car was explicitly asked to be fully drawn; in recult cr7 is missing on the car unfortuntaley.",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "excluded_from_pilot"
+    },
+    {
+      "id": "030_pair",
+      "inputs": [
+        "pairs/030_pair/input.jpeg"
+      ],
+      "reference": "pairs/030_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-88",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "031_pair",
+      "inputs": [
+        "pairs/031_pair/input.jpeg"
+      ],
+      "reference": "pairs/031_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-91",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "test"
+    },
+    {
+      "id": "032_pair",
+      "inputs": [
+        "pairs/032_pair/input.jpeg"
+      ],
+      "reference": "pairs/032_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-94",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "033_pair",
+      "inputs": [
+        "pairs/033_pair/input.jpeg"
+      ],
+      "reference": "pairs/033_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-95",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "034_pair",
+      "inputs": [
+        "pairs/034_pair/input.jpeg"
+      ],
+      "reference": "pairs/034_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-115",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "035_pair",
+      "inputs": [
+        "pairs/035_pair/input.jpeg"
+      ],
+      "reference": "pairs/035_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-116",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "036_pair",
+      "inputs": [
+        "pairs/036_pair/input.jpeg"
+      ],
+      "reference": "pairs/036_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-123",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "037_pair",
+      "inputs": [
+        "pairs/037_pair/input.jpeg"
+      ],
+      "reference": "pairs/037_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-125",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "038_pair",
+      "inputs": [
+        "pairs/038_pair/input.jpeg"
+      ],
+      "reference": "pairs/038_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-130",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "039_pair",
+      "inputs": [
+        "pairs/039_pair/input.jpeg"
+      ],
+      "reference": "pairs/039_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-133",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "result shold have just a bit less intense",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "041_pair",
+      "inputs": [
+        "pairs/041_pair/input.jpeg"
+      ],
+      "reference": "pairs/041_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-136",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "042_pair",
+      "inputs": [
+        "pairs/042_pair/input.jpeg"
+      ],
+      "reference": "pairs/042_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-139",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "043_pair",
+      "inputs": [
+        "pairs/043_pair/input.jpeg"
+      ],
+      "reference": "pairs/043_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-141",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "044_pair",
+      "inputs": [
+        "pairs/044_pair/input.avif"
+      ],
+      "reference": "pairs/044_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-143",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "045_pair",
+      "inputs": [
+        "pairs/045_pair/input_corrected_20261017.png"
+      ],
+      "reference": "pairs/045_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-143",
+      "prompt": "Draw only the single football boot in the photograph, preserving its exact shape, viewing angle, proportions, construction, sole, collar, texture and visible logos on its original clean product background. Do not add a person, legs, another shoe or scenery. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "046_pair",
+      "inputs": [
+        "pairs/046_pair/input.jpeg"
+      ],
+      "reference": "pairs/046_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-148",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "047_pair",
+      "inputs": [
+        "pairs/047_pair/input.jpeg"
+      ],
+      "reference": "pairs/047_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-150",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "048_pair",
+      "inputs": [
+        "pairs/048_pair/input.jpeg"
+      ],
+      "reference": "pairs/048_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-153",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. Keep the trophy contours and fine details accurate and sharply resolved, and the face recognisable. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "049_pair",
+      "inputs": [
+        "pairs/049_pair/input.jpeg"
+      ],
+      "reference": "pairs/049_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-157",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. Keep the ball clearly visible and precisely outlined, separated from the background. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "050_pair",
+      "inputs": [
+        "pairs/050_pair/input.jpeg"
+      ],
+      "reference": "pairs/050_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-159",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "051_pair",
+      "inputs": [
+        "pairs/051_pair/input.jpeg"
+      ],
+      "reference": "pairs/051_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-165",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "052_pair",
+      "inputs": [
+        "pairs/052_pair/input.jpeg"
+      ],
+      "reference": "pairs/052_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-166",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "train"
+    },
+    {
+      "id": "053_pair",
+      "inputs": [
+        "pairs/053_pair/input.jpeg"
+      ],
+      "reference": "pairs/053_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-171",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Remove the incidental boy in the corner and other distracting background people. Emphasise the main photographic subject. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "test"
+    },
+    {
+      "id": "054_pair",
+      "inputs": [
+        "pairs/054_pair/input.jpeg"
+      ],
+      "reference": "pairs/054_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-170",
+      "prompt": "Reproduce the main subject from the supplied photograph faithfully: keep the original pose, expression, gaze direction, proportions, clothing, accessories, visible lettering, object shapes and framing. Keep the same visible extent of the subject; do not invent limbs, people, products or a new scene. Retain a very light graphite background derived from the original photograph, providing a subtle sense of place, depth and volume around the subject. For photographs with a setting, the background should remain perceptible rather than becoming an empty white cut-out. When the source background is strongly defocused, preserve its broad shapes, light and dark masses and spatial depth as faint soft graphite tones without inventing detail. When scenery is recognisable, retain a few relevant forms in their original positions, with lighter tones and softer edges than the main subject. Keep this filling background delicate, airy and subordinate, leaving ample light space for colouring. Separate the subject with stronger contours and contrast. Remove distracting incidental people without erasing the setting. Do not add new scenery, sharpen blurred detail or reproduce crowds. Clean paper means freedom from stains and edge artefacts; it does not mean removing the photographic background. If the reference is a product photograph already on a plain white background, retain that plain background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "test"
+    },
+    {
+      "id": "055_pair",
+      "inputs": [
+        "pairs/055_pair/input.jpeg"
+      ],
+      "reference": "pairs/055_pair/output.png",
+      "kind": "single_input",
+      "source_group": "source-120",
+      "prompt": "Draw only the pair of trainers in the photograph on the original plain product background. Match the exact shoes, number, arrangement, viewing angle, silhouette, soles, mesh, laces and logos. Preserve the product composition one-to-one. Do not add a person, legs, a runner or scenery. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "excluded_from_pilot"
+    },
+    {
+      "id": "056_composite",
+      "inputs": [
+        "pairs/056_composite/input_01.jpeg",
+        "pairs/056_composite/input_02.jpeg"
+      ],
+      "reference": "pairs/056_composite/output.png",
+      "kind": "multi_input",
+      "source_group": "source-12-13",
+      "prompt": "Create one coherent drawing with both main subjects from the two supplied images. Place the subject from image 1 on the left and the subject from image 2 on the right, beside each other at a compatible scale with clear space between them. Keep both subjects complete within their original visible framing, recognisable and distinct; preserve their identities, poses, expressions and clothing. Neither subject may cover, merge into or replace the other. Remove both original backgrounds and all incidental people. Put both subjects on the same clean white background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "excluded_from_pilot"
+    },
+    {
+      "id": "057_composite",
+      "inputs": [
+        "pairs/057_composite/input_01.jpeg",
+        "pairs/057_composite/input_02.jpeg"
+      ],
+      "reference": "pairs/057_composite/output.png",
+      "kind": "multi_input",
+      "source_group": "source-24-23",
+      "prompt": "Create one coherent drawing with both main subjects from the two supplied images. Place the subject from image 1 on the left and the subject from image 2 on the right, beside each other at a compatible scale with clear space between them. Keep both subjects complete within their original visible framing, recognisable and distinct; preserve their identities, poses, expressions and clothing. Neither subject may cover, merge into or replace the other. Remove both original backgrounds and all incidental people. Put both subjects on the same clean white background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "excluded_from_pilot"
+    },
+    {
+      "id": "058_composite",
+      "inputs": [
+        "pairs/058_composite/input_01.jpeg",
+        "pairs/058_composite/input_02.jpeg"
+      ],
+      "reference": "pairs/058_composite/output.png",
+      "kind": "multi_input",
+      "source_group": "source-27-26",
+      "prompt": "Create one coherent drawing with both main subjects from the two supplied images. Place the subject from image 1 on the left and the subject from image 2 on the right, beside each other at a compatible scale with clear space between them. Keep both subjects complete within their original visible framing, recognisable and distinct; preserve their identities, poses, expressions and clothing. Neither subject may cover, merge into or replace the other. Remove both original backgrounds and all incidental people. Put both subjects on the same clean white background. Create a precise, realistic monochrome graphite pencil drawing suitable for children to colour. Preserve recognisable identity and facial likeness. Use sharply resolved facial features, clean decisive subject outlines and crisp fine detail, with natural short pencil strokes and smooth controlled shading. Use the full graphite tonal range from clean paper white through mid-tones to selective deep blacks. Preserve the relative light and dark tones of the original clothing, kit, hair and objects, with strong dark accents where they occur in the source; do not flatten everything into pale or middle grey. Leave suitable lighter surfaces open for colouring without bleaching dark clothing or important tonal structure. Keep the paper clean and neutral white, with pure grey and black graphite only. Keep image margins free of smudges, drips, stains, edge streaks, dirty-paper texture, colour casts and green or purple patches. Avoid blurred subject edges, long parallel facial stripes and mechanical hatching. ",
+      "review_notes": "",
+      "seed": 42,
+      "prompt_basis": "Exact frozen background v4 prompt, with update-200 LoRA at strength 1; no further prompt revision.",
+      "prompt_version": "background-v4-with-lora200",
+      "dataset_split": "excluded_from_pilot"
+    }
+  ],
+  "smoke_ids": [
+    "012_pair",
+    "048_pair",
+    "055_pair",
+    "056_composite"
+  ],
+  "prompt_feedback_sha256": "332860f5f618c962711987de39c57e180cdc2c0dea8a26cfaa0537b895a2a10f",
+  "input_preprocessing": "EXIF orientation and RGB conversion; no external crop or enhancement.",
+  "software": {
+    "diffusers_commit": "b800f828f3951c4d206e154411bcbfa693cd322e",
+    "transformers": "5.20.1",
+    "accelerate": "1.15.0",
+    "huggingface_hub": "2.2.0",
+    "boto3": "1.43.114",
+    "Pillow": "13.0.0"
+  },
+  "comparison_note": "Only the scene-background instructions differ from the accepted reprompt run. Model revision, VAE tiling disabled, input files, seed, steps and resolution policy are unchanged. Product and composite prompts retain their existing background rules.",
+  "true_cfg_scale": 1.0,
+  "reuse_ready_model": true,
+  "vae_tiling": false,
+  "input_sha256": {
+    "pairs/001_kitten-bedspread/input.jpeg": "593f40c08a06b78facfb15417ce1e48e6eae7d6dcb76d9e2de92614d92d4f4a1",
+    "pairs/002_cat-la-streetwear/input.jpeg": "dcce1bf1045de1e17c0f4d07537fdfff790eaafcc2a7367d4c1b6c3f5ce147c1",
+    "pairs/003_footballer-number-7/input.jpeg": "06d9daf103e3c9c34dafec5691abf82f661c429afc8015453becb472e10ece33",
+    "pairs/004_pair/input.jpeg": "f166d69dadb5933b509a989f26ec5a7e311d3def062494058ea7cdbe75d1ee45",
+    "pairs/005_pair/input.jpeg": "8822e51f0e14ad096e7a5f87b4e43721a71c735c4d5dfa5d09e7924c288eabd8",
+    "pairs/006_pair/input.jpeg": "13fce94dbdab6a12740574fcd7015ab40b268921b5039fd0072bbbddd1134466",
+    "pairs/007_pair/input.jpeg": "618c5f2dde0d3dd421f56078ed0acc850175c574b8a12ca120353664b38303ab",
+    "pairs/008_pair/input.jpeg": "93e7615e142d86fed75f42280b789518b9d1a538e67163e3a1c4b4b3a9fb705b",
+    "pairs/009_pair/input.jpeg": "9c41b44c2f5fce9c7f96a29dd84cda4d6e15d0a0dbad754b361a9ad68f797af2",
+    "pairs/010_pair/input.jpeg": "dec62100d5950679cba46218d8a7024c8bcc3346c3731c83c029245606d347aa",
+    "pairs/011_pair/input.jpeg": "b31b5464c49e8dfd22490481e5d76d2eac3dafed9a79b72016a22ba0ea31b56f",
+    "pairs/012_pair/input.jpeg": "aa4051045a51038b264b786d7235cbd8916fe9f584270139007d06a68e61bee3",
+    "pairs/013_pair/input.jpeg": "297705ccae9f7cf8daf7aee8b079ab67e3df250c7079725fee625a22a6a9cad1",
+    "pairs/014_pair/input.jpeg": "81aba3024536c4fb0165091c60da83aa32315591d28318d0e75b315cb12b6c04",
+    "pairs/015_pair/input.jpeg": "28ffc75e217819c37d445431bff5aa18b363bb284ddd611c321d1869dbce77ef",
+    "pairs/016_pair/input.jpeg": "1e063d0de0cc16072cb97dd9cc85b0e86d78212d1f41c14d6d7f9d9956caa852",
+    "pairs/017_pair/input.jpeg": "bc9a72fc8693a87e52f6b28b8043cf2053d8c96c7807a0938f3c40a8ffcc9b79",
+    "pairs/018_pair/input.jpeg": "6740c6c7d465c4d63ede0c5392a52850959797d92801fd46d922f138cb1a4c62",
+    "pairs/019_pair/input.jpeg": "bc2ac311e53bd000d4aaab022f800eed6ecd77e978304d077b3ddb80b907686c",
+    "pairs/020_pair/input.jpeg": "d89098a13c023cdd766c8ada565927582b3ba167edc022f7da468b48806df6ed",
+    "pairs/021_pair/input.jpeg": "6e399c3802a94567371a7fef6605c90f6b34562425b870c52df6a67fee627489",
+    "pairs/022_pair/input.jpeg": "11e63cc44b6e5bd6677a17f2714b9694d4e0345313eeefd31ffe09f350fd60af",
+    "pairs/023_pair/input.jpeg": "0a99b5e69edeb4e70700f354b6d687c1996483401ea119c8d8fc3b63f755ab2e",
+    "pairs/024_pair/input.jpeg": "d75777cea78bebf0fd9949e13040a85f2c3759a99dedefa5d8f39767aee7df51",
+    "pairs/025_pair/input.jpeg": "38bc017674b28200759a44911b91038b72e3e3b4433d8e192be51d0b1c3bc3c2",
+    "pairs/027_pair/input.jpeg": "6ebe01277c147ffedad22cf247aa8102b0a5ee1d80fe302ca5ec89173a839b8f",
+    "pairs/028_pair/input.jpeg": "de11a3f3ac544849c222250e1e4658241d7e3df278f99a2ad975c5d4acc5d04b",
+    "pairs/029_pair/input.jpeg": "56e3fe4bd3d6ad8d6a9b364fbdac9a7192d760043ff7d493b36de119a647519e",
+    "pairs/030_pair/input.jpeg": "5dba6d8473d614c56b296e6c10339fb66f31bf9347e1cd24044c9cf5ba0a4198",
+    "pairs/031_pair/input.jpeg": "9d18fddd3540616e555242f8d9f7fff78c74f7be599ed5ed7db581cac4b4082f",
+    "pairs/032_pair/input.jpeg": "1785b79805b80b42a022bb39b9adbb134e684a7b99ca5718b6eed6204b877395",
+    "pairs/033_pair/input.jpeg": "428b545aac0e644f52460e531f9830892c611b90ed9c81edd36500cd035637de",
+    "pairs/034_pair/input.jpeg": "d58c9e0eb24ce9372f20aab0c254c66735c5cd698d8e64768dcca59e89b5607c",
+    "pairs/035_pair/input.jpeg": "72fff6468f2c3bcf6889e4f12a5dcdc0983bfb9fb2a7b1f8107556e0da948362",
+    "pairs/036_pair/input.jpeg": "aebfe3f45b69d1cf2f8cb19a7fbe500e687f4ada4d77cbbb3d7e22f7f87a6967",
+    "pairs/037_pair/input.jpeg": "45a8e20563e3dadb9d71c604b399c43f60bfc67fb74ab13c40a04617b69973f8",
+    "pairs/038_pair/input.jpeg": "1012a51de30d6ddaa712e21a509ca06ad590033095a7fe6a5b05f39f498fc67f",
+    "pairs/039_pair/input.jpeg": "0adb30069e7ef8dc038a8a108e95b5f714bb3dc6bd0da017ab3d7e94cb60b0d2",
+    "pairs/041_pair/input.jpeg": "ec59ff7746d6510cdd216dc381d3da943513e3767477e0927947990f4498d2c0",
+    "pairs/042_pair/input.jpeg": "4d1b1f2a4d590ee961ab37cb26fb9e8a8051fc91c10cf5beb33f92afa6a8bcf3",
+    "pairs/043_pair/input.jpeg": "4085255f6248f44182a992fd3bd9f5b4f7def90dce0c17b3de9fbf7c8e5d845f",
+    "pairs/044_pair/input.avif": "b958e96e05a3b297c9d53eed82ea0c9ae4cc4441d763b0adee7df2385997293f",
+    "pairs/045_pair/input_corrected_20261017.png": "c22151599e41f3c768b356bd52a1ce58bc2886760fc45cf9947cf5f24b5d80ea",
+    "pairs/046_pair/input.jpeg": "71f18fbd14a1f91c2804fe8f5ee8bf00823e1dbc276791e64907d604bd363afe",
+    "pairs/047_pair/input.jpeg": "f5667024ef7ca29f28fd1ef7fd2e46514d956088c58072e1e17b900568bc8287",
+    "pairs/048_pair/input.jpeg": "7e58b59be422fceaa863eee1b3f8e3eb9e7c8f22b60732b606175012cfebdda7",
+    "pairs/049_pair/input.jpeg": "97a920a298ef15c39be5e4caed7345a815732b837621dc3419810e8db14819e0",
+    "pairs/050_pair/input.jpeg": "4acf4c1b9b9ca4f22fadb272b01898b782816a5d4b33caec4ea7b28254c5a64c",
+    "pairs/051_pair/input.jpeg": "2d8deb47627c1e0562c8cc97aba596c591a80bfdae00b0719b87eade0c05b079",
+    "pairs/052_pair/input.jpeg": "7eb4b1204b82e4dd6c1dae1b03137c0e8f33c2cb029979014bcbf9cd665ac220",
+    "pairs/053_pair/input.jpeg": "fc7aeb3ec9cb4a75e66a5f5c9c55cd14eaa40472e89453ad90d7a1bd2a7fcffe",
+    "pairs/054_pair/input.jpeg": "e81811931c08cf081cbcad9d73a64f151d78dd8ec4bbaf12e84d2a830cecfe6d",
+    "pairs/055_pair/input.jpeg": "c415d1d62b2a0d3e82222c6f0209c0f8b1e98d7852cfaa5d4fc661d22156e73b",
+    "pairs/056_composite/input_01.jpeg": "79d51055f2fc1e46bb8f5dd6ece5feeba875ab94268602c916f97774ac659959",
+    "pairs/056_composite/input_02.jpeg": "f1ea2668b50628ee3daa9cbb8eb65cce558db8df7bd6e0fb87da7c2518c8afb9",
+    "pairs/057_composite/input_01.jpeg": "4a118e96642b26e599e0333a031fab9cede4950f2cfd0460f28fbc11358eee8d",
+    "pairs/057_composite/input_02.jpeg": "6de66587ac017a7c58801522061dd84e3e730809f36114e9703d4b5f6deb2eb7",
+    "pairs/058_composite/input_01.jpeg": "aaa28e47f058450aa4fc3dd783aee14bc9c3d2cde4e475967ad2beb573fa196c",
+    "pairs/058_composite/input_02.jpeg": "b31b5464c49e8dfd22490481e5d76d2eac3dafed9a79b72016a22ba0ea31b56f"
+  },
+  "input_objects": {
+    "pairs/045_pair/input_corrected_20261017.png": "dataset-corrections/045_pair/input_corrected_20261017.png"
+  },
+  "prompt_policy_version": "lora200-with-frozen-background-v4",
+  "vae_slicing": false,
+  "worker_semantics": "Eight independent inference replicas, each loading the same trained adapter. Full dataset diagnostic, including train/validation/test and excluded samples; not an untouched evaluation.",
+  "worker_sha256": "3a630f637da35c466b091d4d0d6c57833f68a57457da99e2d8d4c749f4a05b57",
+  "bootstrap_sha256": "09cca07412a4036aee1b31263eab59e88abec1d5c00f9e58504d8f3dc41fadec",
+  "comparison_basis": "Exact per-image prompts, inputs, model revision, seed and sampling settings from the completed background v4 baseline; adds the trained update-200 LoRA at strength 1. Raw output, without greyscale conversion.",
+  "prompt_source_run_sha256": "e7d77febea51065bad194f353c285525fe0b4a71328ccbf940dd21ef17b03749"
+}

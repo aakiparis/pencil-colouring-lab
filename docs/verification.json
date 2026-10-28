@@ -1,0 +1,26 @@
+{
+  "checked_on": "2026-10-29",
+  "cpu_tests": {
+    "passed": 10,
+    "skipped": 0,
+    "suite": "python -m unittest discover -s tests -v",
+    "environment": "Existing local training-preparation Python environment with Pillow and Hugging Face Datasets installed"
+  },
+  "checks": [
+    "Original-source SHA-256 inventory",
+    "Stable input archive and run configuration",
+    "No cloud access during inference planning",
+    "Cross-split leakage and unsafe path rejection",
+    "Synthetic image export and Parquet reload",
+    "Staged calibration plan and preserved preparation/DDP contract checks",
+    "Python, shell and JavaScript syntax",
+    "Known local S3 credentials and common token-pattern scan without printing values"
+  ],
+  "gpu_runs_for_portable_layer": 0,
+  "cloud_resources_allocated_for_validation": false,
+  "limitations": [
+    "No fresh GPU or Nebius provisioning test",
+    "Direct dependencies pinned; no complete transitive dependency lock",
+    "CI skips optional paired-export integration unless local dependencies are installed"
+  ]
+}

@@ -1,0 +1,16 @@
+torch==2.8.0
+torchvision==0.23.0
+https://github.com/huggingface/diffusers/archive/b800f828f3951c4d206e154411bcbfa693cd322e.tar.gz
+transformers==5.20.1
+accelerate==1.15.0
+huggingface-hub==2.2.0
+boto3==1.43.114
+Pillow==13.0.0
+peft==0.21.2
+datasets==5.1.0
+tensorboard==2.21.0
+Jinja2==3.1.6
+ftfy==6.3.1
+sentencepiece==0.2.2
+protobuf==6.32.1
+Brotli==1.2.0

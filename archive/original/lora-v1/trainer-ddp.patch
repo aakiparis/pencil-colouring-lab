@@ -1,0 +1,144 @@
+--- upstream/train_dreambooth_lora_qwenimage21_img2img.py
++++ local/trainer_ddp.py
+@@ -1,5 +1,11 @@
+ #!/usr/bin/env python
+ # coding=utf-8
++# MODIFIED LOCALLY for eight-GPU DDP checkpoint correctness.
++# Derived from the unmodified Apache-2.0 upstream trainer at Diffusers
++# b800f828f3951c4d206e154411bcbfa693cd322e. Changes: all ranks enter
++# checkpoint saves; pruning remains rank-zero-only; non-main save hooks
++# suppress frozen base model serialization. See distributed_train.py for
++# barriers and the complete-checkpoint S3 commit protocol.
+ # Copyright 2025 The HuggingFace Inc. team. All rights reserved.
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+@@ -41,6 +47,7 @@
+ import random
+ import shutil
+ import warnings
++from datetime import timedelta
+ from contextlib import nullcontext
+ from pathlib import Path
+ 
+@@ -49,7 +56,7 @@
+ import transformers
+ from accelerate import Accelerator, DistributedType
+ from accelerate.logging import get_logger
+-from accelerate.utils import DistributedDataParallelKwargs, ProjectConfiguration, set_seed
++from accelerate.utils import DistributedDataParallelKwargs, InitProcessGroupKwargs, ProjectConfiguration, set_seed
+ from huggingface_hub import create_repo, upload_folder
+ from huggingface_hub.utils import insecure_hashlib
+ from peft import LoraConfig, prepare_model_for_kbit_training, set_peft_model_state_dict
+@@ -218,6 +225,7 @@
+     epoch,
+     torch_dtype,
+     is_final_validation=False,
++    global_step=None,
+ ):
+     args.num_validation_images = args.num_validation_images if args.num_validation_images else 1
+     # `--final_validation_prompt` stands in when only the final pass is asked for.
+@@ -225,8 +233,11 @@
+     logger.info(
+         f"Running validation... \n Generating {args.num_validation_images} images with prompt: {validation_prompt}."
+     )
++    adapter_dtypes = [(param, param.dtype) for param in pipeline.transformer.parameters() if param.requires_grad]
+     pipeline = pipeline.to(accelerator.device, dtype=torch_dtype)
+     pipeline.set_progress_bar_config(disable=True)
++    pipeline.vae.disable_tiling()
++    pipeline.vae.disable_slicing()
+ 
+     # run inference
+     generator = torch.Generator(device=accelerator.device).manual_seed(args.seed) if args.seed is not None else None
+@@ -245,6 +256,11 @@
+                 generator=generator,
+             ).images[0]
+             images.append(image)
++
++    # Keep optimiser parameter dtypes unchanged by the inference pipeline cast.
++    for param, original_dtype in adapter_dtypes:
++        param.data = param.data.to(original_dtype)
++    publish_training_previews(images, args, epoch, global_step)
+ 
+     for tracker in accelerator.trackers:
+         phase_name = "test" if is_final_validation else "validation"
+@@ -1237,7 +1253,7 @@
+         mixed_precision=args.mixed_precision,
+         log_with=args.report_to,
+         project_config=accelerator_project_config,
+-        kwargs_handlers=[kwargs],
++        kwargs_handlers=[kwargs, InitProcessGroupKwargs(timeout=timedelta(minutes=20))],
+     )
+ 
+     # Disable AMP for MPS.
+@@ -1454,6 +1470,10 @@
+                 transformer_lora_layers=transformer_lora_layers_to_save,
+                 **_collate_lora_metadata(modules_to_save),
+             )
++
++        else:
++            # Local DDP change: frozen base weights must never be saved by other ranks.
++            weights.clear()
+ 
+     def load_model_hook(models, input_dir):
+         transformer_ = None
+@@ -1834,8 +1854,13 @@
+ 
+     for epoch in range(first_epoch, args.num_train_epochs):
+         transformer.train()
+-
+-        for batch in train_dataloader:
++        # Local recovery change: deterministic sampler epoch and within-epoch offset.
++        batch_sampler.generator.seed((args.seed or 0) + epoch)
++        if hasattr(train_dataloader, "set_epoch"):
++            train_dataloader.set_epoch(epoch)
++        resume_batches = (initial_global_step % num_update_steps_per_epoch) * args.gradient_accumulation_steps if epoch == first_epoch else 0
++        active_dataloader = accelerator.skip_first_batches(train_dataloader, resume_batches) if resume_batches else train_dataloader
++        for batch in active_dataloader:
+             models_to_accumulate = [transformer]
+             sample_indices = batch["indices"]
+ 
+@@ -1992,10 +2017,10 @@
+                 progress_bar.update(1)
+                 global_step += 1
+ 
+-                if accelerator.is_main_process or accelerator.distributed_type == DistributedType.DEEPSPEED:
++                if True:  # Local DDP change: every rank must save RNG and Accelerator state.
+                     if global_step % args.checkpointing_steps == 0:
+                         # _before_ saving state, check if this save would set us over the `checkpoints_total_limit`
+-                        if args.checkpoints_total_limit is not None:
++                        if args.checkpoints_total_limit is not None and accelerator.is_main_process:
+                             checkpoints = os.listdir(args.output_dir)
+                             checkpoints = [d for d in checkpoints if d.startswith("checkpoint")]
+                             checkpoints = sorted(checkpoints, key=lambda x: int(x.split("-")[1]))
+@@ -2025,6 +2050,8 @@
+             if global_step >= args.max_train_steps:
+                 break
+ 
++        if args.validation_prompt is not None and epoch % args.validation_epochs == 0:
++            accelerator.wait_for_everyone()
+         if accelerator.is_main_process:
+             if args.validation_prompt is not None and epoch % args.validation_epochs == 0:
+                 # create pipeline. The prompt is supplied as embeddings, so no text encoder is loaded.
+@@ -2045,10 +2072,14 @@
+                     pipeline_args=validation_pipeline_args,
+                     torch_dtype=weight_dtype,
+                     epoch=epoch,
++                    global_step=global_step,
+                 )
+                 del pipeline
+                 images = None
+                 free_memory()
++
++        if args.validation_prompt is not None and epoch % args.validation_epochs == 0:
++            accelerator.wait_for_everyone()
+ 
+     # Save the lora layers
+     accelerator.wait_for_everyone()
+@@ -2095,6 +2126,7 @@
+                 accelerator=accelerator,
+                 pipeline_args=validation_pipeline_args,
+                 epoch=epoch,
++                global_step=global_step,
+                 is_final_validation=True,
+                 torch_dtype=weight_dtype,
+             )
